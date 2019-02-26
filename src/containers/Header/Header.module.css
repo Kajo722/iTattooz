@@ -7,27 +7,13 @@
     max-width: 100vw;
     width:100%;
     display: grid;
-    grid-template-columns: 40vh auto 20vh;
-    grid-template-rows: 40vh auto 20vh;
+    grid-template-columns: 20vh auto 20vh;
+    grid-template-rows: 50vh auto 20vh;
 }
 
-.logoSmall {
-    position: fixed;
-    top: 5rem;
-    left: 5rem;
-    font-family: 'Special Elite', cursive;
-    font-size: 5rem;
-    transition: all 125ms ease-in-out;
-}
 
-.logo {
-    position: fixed;
-    top: 5rem;
-    left: 5rem;
-    font-family: 'Special Elite', cursive;
-    font-size: 10rem;
-    transition: all 125ms ease-in-out;
-}
+
+
 
 .headerText {
     grid-column: 2/3;
@@ -35,8 +21,30 @@
     font-size: 20rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
+   
 }
 
-.headerText p {
-    transition: all 1s ease-out;
+.showMainHeader {
+    animation: slide-up 1s ease;
 }
+
+.showSecondaryHeader {
+    font-size: 10rem;
+    font-weight: 600;
+    animation: slide-up 1.5s ease-in;
+}
+
+
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
