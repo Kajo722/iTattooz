@@ -1,0 +1,13 @@
+.rightSidebar {
+    position: fixed;
+    font-weight: 600;
+    top: 50vh;
+    z-index: 3;
+    right: 2rem;
+    -webkit-transform: rotate(90deg) translateX(50%);
+    -ms-transform: rotate(90deg) translateX(50%);
+    transform: rotate(90deg) translateX(50%);
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+}

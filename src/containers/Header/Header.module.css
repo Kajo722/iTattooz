@@ -1,0 +1,42 @@
+.header {
+    height: 100vh;
+    background: url(../../assets/Images/header.jpg );
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    width:100%;
+    display: grid;
+    grid-template-columns: 40vh auto 20vh;
+    grid-template-rows: 40vh auto 20vh;
+}
+
+.logoSmall {
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 5rem;
+    transition: all 125ms ease-in-out;
+}
+
+.logo {
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 10rem;
+    transition: all 125ms ease-in-out;
+}
+
+.headerText {
+    grid-column: 2/3;
+    grid-row: 2;
+    font-size: 20rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.headerText p {
+    transition: all 1s ease-out;
+}

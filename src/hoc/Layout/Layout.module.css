@@ -1,0 +1,18 @@
+.root {
+    position: relative;
+}
+.main {
+    padding-bottom: 28.125rem;
+}
+.mainGrid {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+}
+.content {
+    margin-top: 10rem;
+    min-height: 50vh;
+}

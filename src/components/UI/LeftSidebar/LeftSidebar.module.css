@@ -1,0 +1,22 @@
+.leftSidebar {
+    position: fixed;
+    font-weight: 600;
+    top: 50vh;
+    z-index: 3;
+    left: 1rem;
+    -webkit-transform: rotate(-90deg) translateX(-50%);
+    -ms-transform: rotate(-90deg) translateX(-50%);
+    transform: rotate(-90deg) translateX(-50%);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+}
+
+.leftSidebar::before {
+    content: "";
+    position: absolute;
+    left: -4.8125rem;
+    bottom: 1rem;
+    width: 4.375rem;
+    border: 0.5px solid rgb(40, 38, 44);
+}

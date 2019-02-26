@@ -1,0 +1,11 @@
+.logo {
+    position: fixed;
+    top: 10rem;
+    left: 10rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 5rem;
+}
+
+.span {
+    color: rgb(143, 0, 179)
+}
