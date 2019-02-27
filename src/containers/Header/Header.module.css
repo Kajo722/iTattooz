@@ -31,9 +31,11 @@
 }
 
 @media screen and (max-height:950px) {
-
+    .header {
+        grid-template-rows: 60vh auto 20vh;
+    }
     .headerText {
-       font-size: 8rem
+       font-size: 9rem
     }
     .showSecondaryHeader {
         font-size: 6rem;
