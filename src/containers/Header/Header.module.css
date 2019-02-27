@@ -1,19 +1,16 @@
 .header {
     height: 100vh;
-    background: url(../../assets/Images/header.jpg );
+    background: url(../../assets/Images/header.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
     max-width: 100vw;
     width:100%;
     display: grid;
-    grid-template-columns: 20vh auto 20vh;
+    grid-template-columns: 10vh auto 20vh;
     grid-template-rows: 50vh auto 20vh;
 }
-
-
-
-
 
 .headerText {
     grid-column: 2/3;
@@ -23,7 +20,6 @@
     font-weight: 700;
    
 }
-
 .showMainHeader {
     animation: slide-up 1s ease;
 }
@@ -34,7 +30,87 @@
     animation: slide-up 1.5s ease-in;
 }
 
+@media screen and (max-height:950px) {
 
+    .headerText {
+       font-size: 8rem
+    }
+    .showSecondaryHeader {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:2150px) {
+    .header {
+        grid-template-rows: 60vh auto 20vh;
+    }
+    .headerText {
+       font-size: 15rem
+    }
+    .showSecondaryHeader {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 10rem
+    }
+    .showSecondaryHeader {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 8rem
+    }
+    .showSecondaryHeader {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 6rem
+    }
+    .showSecondaryHeader {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 4rem
+    }
+    .showSecondaryHeader {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 2.5rem
+    }
+    .showSecondaryHeader {
+        font-size: 1.5rem;
+    }
+}
 
 @keyframes slide-up {
     0% {

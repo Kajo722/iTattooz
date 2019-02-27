@@ -1,5 +1,154 @@
 .navbar {
-    position:fixed;
-    top: 2rem;
-    right: 2rem;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    pointer-events: auto;
+}
+.hamburger {
+    background-color: #28262c;
+    color: #fff;
+    height: 6rem;
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+    width: 6rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    font-family: moderat,sans-serif;
+    font-weight: 800;
+    -webkit-letter-spacing: 0.16em;
+    -moz-letter-spacing: 0.16em;
+    -ms-letter-spacing: 0.16em;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: #28262c;
+    content: 'Menu';
+    font-size: 1.5rem;
+    height: 6rem;
+    opacity: 1;
+    padding: 2rem 2rem;
+    position: absolute;
+    right: 6.5rem;
+    -webkit-transition: all 250ms cubic-bezier(0.65,0.05,0.36,1) 250ms;
+    transition: all 250ms cubic-bezier(0.65,0.05,0.36,1) 250ms;
+    visibility: visible;
+    width: 10rem;
+    z-index: 1;
+}
+.navbarNav {
+  font-family: moderat,sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  height: 6rem;
+  background-color: #28262c;
+  right: 11.5rem;
+  top: 5rem;
+  position: fixed;
+  position: absolute;
+  display: grid;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  position: fixed;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 6rem;
+  justify-content: center;
+  align-content: center;
+  z-index: 2;
+  transition: visibility 500ms,width 250ms cubic-bezier(0.65,0.05,0.36,1);
+  width: 10rem;
+  visibility: hidden;
+}
+
+.navbarNav li {
+  overflow: hidden;
+}
+
+.visibility {
+  visibility: visible;
+  width: 55rem;
+}
+
+.navbarNav li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+li > a:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 5px;
+  margin: 5px 0 0;
+  background: white;
+  visibility: hidden;
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+li > a:hover:before,
+li > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
+.bar1, .bar2, .bar3 {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: white;
+  margin: 0.3rem 0;
+  align-self: center;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem) ;
+  transform: rotate(-45deg) translate(-9px, 0.6rem) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem) ;
+  transform: rotate(45deg) translate(-0.8rem, -0.8rem) ;
+}
+
+.link4 {
+  transition: opacity 150ms ease 100ms;
+  opacity: 0;
+}
+
+.link3 {
+  transition: opacity 150ms ease 180ms;
+  opacity: 0;
+}
+
+.link2 {
+  transition: opacity 150ms ease 260ms;
+  opacity: 0;
+}
+
+.link1 {
+  transition: opacity 150ms ease 360ms;
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 1;
 }
