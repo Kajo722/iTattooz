@@ -3,7 +3,7 @@
     font-weight: 600;
     top: 50vh;
     z-index: 3;
-    left: 1rem;
+    left: 2rem;
     -webkit-transform: rotate(-90deg) translateX(-50%);
     -ms-transform: rotate(-90deg) translateX(-50%);
     transform: rotate(-90deg) translateX(-50%);

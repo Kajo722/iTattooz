@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import styles from './Navbar.module.css';
+import LinkList from './LinkList/LinkList';
+import LinkItem from './LinkItem/LinkItem';
 
 class Navbar extends Component {
 
@@ -22,12 +24,12 @@ class Navbar extends Component {
                     <div className={styles.bar2}></div>
                     <div className={styles.bar3}></div>
                 </div>
-                <ul className={`${styles.navbarNav} ${this.state.active ? styles.visibility : ''}`}>
-                    <li className={`${styles.link1} ${this.state.active ? styles.opacity : ''}`}><a href='/'>Home</a></li>
-                    <li className={`${styles.link2} ${this.state.active ? styles.opacity : ''}`}><a href='/'>Artists</a></li>
-                    <li className={`${styles.link3} ${this.state.active ? styles.opacity : ''}`}><a href='/'>Career</a></li>
-                    <li className={`${styles.link4} ${this.state.active ? styles.opacity : ''}`}><a href='/'>Contact Us</a></li>
-                </ul>
+                <LinkList style={`${styles.navbarNav} ${this.state.active ? styles.visibility : ''}`}>
+                    <LinkItem link='/' style={`${styles.link1} ${this.state.active ? styles.opacity : ''}`}>Home</LinkItem>
+                    <LinkItem link='/' style={`${styles.link2} ${this.state.active ? styles.opacity : ''}`}>Artists</LinkItem>
+                    <LinkItem link='/' style={`${styles.link3} ${this.state.active ? styles.opacity : ''}`}>Career</LinkItem>
+                    <LinkItem link='/' style={`${styles.link4} ${this.state.active ? styles.opacity : ''}`}>Contact Us</LinkItem>
+                </LinkList>
             </div>
         )
     }

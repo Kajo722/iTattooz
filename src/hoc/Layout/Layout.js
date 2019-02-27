@@ -14,7 +14,6 @@ class Layout extends Component{
                     <div className={styles.mainGrid}>
                         <Header />
                         <LeftSidebar />
-                        <RightSidebar />
                         <main className={styles.content}>
                             {this.props.children}
                         </main>
