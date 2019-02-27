@@ -1,71 +1,66 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import styles from './Header.module.css';
 import Logo from '../../components/Logo/Logo';
 import Navbar from '../../components/Navigation/Navbar/Navbar'
 
-const debounce = (func, wait) => {
-    let timeout
-    return (...args) => {
-      clearTimeout(timeout)
-      timeout = setTimeout(() => func.apply(this, args), wait)
-    }
-  }
-
 class Header extends Component {
 
     state = {
-        scrollPositionY: 0,
-        messages: ['Design', 'Customize', 'Create'],
-        currentMessage: ['Design'],
-        index: 0
+        messages: ['', 'Discover.', 'Design.', 'Create.'],
+        currentMessage: [],
+        index: 0,
+        show: false
     }
-
     componentDidMount(){
-        window.addEventListener('scroll', debounce(this.handleScroll, 16))
-        this.interval = setInterval(() => this.changeText(), 3000);
-    }
-    
-    componentWillUnmount(){
-        window.removeEventListener('scroll', debounce(this.handleScroll, 16))
-        clearInterval(this.interval);
-    }
-
-    componentDidUpdate() {
-
-    }
-    
-    changeText = () => {
-        if (this.state.index < 2) {
-            this.setState(prevState => ({
-                index: prevState.index + 1
-              }));
-            this.setState(prevState => ({
-                ...prevState,
-                currentMessage: this.state.messages[this.state.index]
-            }))
-        } else {
-            this.setState(prevState => ({
-                ...prevState,
-                index: -1
-            }))
+        if (this.state.index < 3) {
+            this.interval = setInterval(() => this.changeText(), 1000);
         }
     }
 
-    handleScroll = () => {
-        // + is unary operator, same as Number(window.scrollY)
-        const scrollPositionY = +window.scrollY
-        return this.setState({ scrollPositionY })
-      }
+    componentWillUnmount(){
+        clearInterval(this.interval);     
+    }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        if (nextState.index > 3 ) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    changeText = () => {
+        this.setState(prevState => ({
+            ...prevState,
+            show: !this.state.show
+        }))
+        this.setState(prevState => ({
+            ...prevState,
+            index: prevState.index + 1,
+            currentMessage: this.state.messages[this.state.index + 1]
+        }));
+    }
     render() {
-        const isScrolling = !!this.state.scrollPositionY
+        let headerMain = null
+        let headerSecondary = null
+
+        if (this.state.index < 4) {
+            headerMain = (
+                <div className={styles.showMainHeader}>{this.state.currentMessage}</div>
+            )
+        }
+        if (this.state.index === 3) {
+            headerSecondary = (
+                <div className={styles.showSecondaryHeader}>For artists. By artists.</div>
+            )
+        }
         return (
             <>
             <div className={styles.header}>
-                <Logo logo={isScrolling ? styles.logoSmall : styles.logo}/>
+                <Logo/>
                 <div className={styles.headerText}>
-                    <p>{this.state.currentMessage}</p>
+                    {headerMain}
+                    {headerSecondary}
                 </div>
                 <Navbar/>
             </div>

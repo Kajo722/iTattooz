@@ -1,32 +1,15 @@
 .header {
     height: 100vh;
-    background: url(../../assets/Images/header.jpg );
+    background: url(../../assets/Images/header.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
     max-width: 100vw;
     width:100%;
     display: grid;
-    grid-template-columns: 40vh auto 20vh;
-    grid-template-rows: 40vh auto 20vh;
-}
-
-.logoSmall {
-    position: fixed;
-    top: 5rem;
-    left: 5rem;
-    font-family: 'Special Elite', cursive;
-    font-size: 5rem;
-    transition: all 125ms ease-in-out;
-}
-
-.logo {
-    position: fixed;
-    top: 5rem;
-    left: 5rem;
-    font-family: 'Special Elite', cursive;
-    font-size: 10rem;
-    transition: all 125ms ease-in-out;
+    grid-template-columns: 10vh auto 20vh;
+    grid-template-rows: 50vh auto 20vh;
 }
 
 .headerText {
@@ -35,8 +18,109 @@
     font-size: 20rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
+   
+}
+.showMainHeader {
+    animation: slide-up 1s ease;
 }
 
-.headerText p {
-    transition: all 1s ease-out;
+.showSecondaryHeader {
+    font-size: 10rem;
+    font-weight: 600;
+    animation: slide-up 1.5s ease-in;
 }
+
+@media screen and (max-height:950px) {
+
+    .headerText {
+       font-size: 8rem
+    }
+    .showSecondaryHeader {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:2150px) {
+    .header {
+        grid-template-rows: 60vh auto 20vh;
+    }
+    .headerText {
+       font-size: 15rem
+    }
+    .showSecondaryHeader {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 10rem
+    }
+    .showSecondaryHeader {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 8rem
+    }
+    .showSecondaryHeader {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 6rem
+    }
+    .showSecondaryHeader {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 4rem
+    }
+    .showSecondaryHeader {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .header {
+        grid-template-rows: 70vh auto 20vh;
+    }
+    .headerText {
+       font-size: 2.5rem
+    }
+    .showSecondaryHeader {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
