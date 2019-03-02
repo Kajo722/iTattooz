@@ -1,0 +1,50 @@
+.container {
+    grid-column: 2/7;
+    grid-row: 1/8;
+    z-index: 3;
+    position: relative;
+}
+
+.container:before  {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.4;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    top: -1.25rem;
+    left: -1.25rem;
+    border-bottom-width: 0.75rem;
+    border-bottom-color: #04acaa;
+    border-bottom-style: solid;
+    border-left-width: 0.75rem;
+    border-left-color: #04acaa;
+    border-left-style: solid;
+    top: 51rem;
+    left: -3rem;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 2;
+    width: 11.875rem;
+    height: 11.875rem;
+    background: linear-gradient( 0deg,#f9c7c0 0%,#04acaa 100% );
+    opacity: 0.4;
+    bottom: -1.25rem;
+    right: -1.25rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    top: 12rem;
+    left: auto;
+    right: -2rem;
+    opacity: 0.9;
+}
+
+.image {
+   width: 100%;
+}
