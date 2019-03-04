@@ -45,6 +45,11 @@
     opacity: 0.9;
 }
 
-.image {
-   width: 100%;
+.noImage {
+   display: none;
+}
+
+.imageDisplay {
+    width: 100%;
+    opacity: 1;
 }

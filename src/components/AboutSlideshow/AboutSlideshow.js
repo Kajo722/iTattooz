@@ -12,11 +12,15 @@ class AboutSlideshow extends Component {
     }
 
     componentDidMount(){
-            this.interval = setInterval(() => this.changeImage(), 2500);
+        this.interval = setInterval(() => this.changeImage(), 2500);
     }
 
     componentWillUnmount(){
         clearInterval(this.interval);     
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.state.index !== nextState.index
     }
 
     changeImage = () => {
@@ -33,28 +37,11 @@ class AboutSlideshow extends Component {
     }
 
     render() {
-
-        let img = null;
-
-        if (this.state.index === 0) {
-            img = (
-                <img src={img1} alt='img' className={styles.image}></img>
-            )
-        }
-        if (this.state.index === 1) {
-            img = (
-                <img src={img2} alt='img' className={styles.image}></img>
-            )
-        }
-        if (this.state.index === 2) {
-            img = (
-                <img src={img3} alt='img' className={styles.image}></img>
-            )
-        }
-
         return(
             <div className={styles.container}>
-                {img}
+                    <img src={img1} alt='img' className={`${this.state.index === 0 ? styles.imageDisplay : styles.noImage}`}></img>
+                    <img src={img2} alt='img' className={`${this.state.index === 1 ? styles.imageDisplay : styles.noImage}`}></img>
+                    <img src={img3} alt='img' className={`${this.state.index === 2 ? styles.imageDisplay : styles.noImage}`}></img>
             </div>
         )
     }
