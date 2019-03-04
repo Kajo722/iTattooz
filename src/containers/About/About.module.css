@@ -1,11 +1,10 @@
 .containerMain {
     height: 100vh;
-    margin:auto;
+    margin: auto;
     max-width: 130rem;
     display: grid;
     grid-template-rows: repeat(9, auto);
     grid-template-columns: repeat(10, auto);
-    margin-bottom: 10rem;
     margin-top: 10rem;
 }
 .mainImageContainer {
@@ -13,32 +12,23 @@
     grid-row: 3/10;
     grid-column: 7/11;
 }
-.imageMain {
-   width: 100%;
-}
 .header {
-    color:black;
-    z-index:3;
+    color: black;
+    z-index: 3;
     font-size: 3rem;
     grid-row: 8;
     grid-column: 5/8;
     align-self: center;
     justify-self: start;
 }
-.header h2 {
-    font-size: 200%;
-}
 .containerSecondary {
     display: grid;
-    height: 30vh;
+    height: 30rem;
     position: relative;
     margin: auto;
     max-width: 130rem;
     grid-template-columns: auto auto 3rem auto auto;
-    margin-bottom: 40rem;
-}
-.imageSecondary {
-    width: 100%;  
+    margin-bottom: 30rem;
 }
 .content {
     grid-column: 4/5;
@@ -61,46 +51,26 @@
     top: 30rem;
     right: 30rem;
 }
-.content > h2 {
-    margin-bottom: 1rem;
-    font-size: 250%;
-}
-.content > div {
-    font-size: 120%;
-}
-
 .secondaryImageContainer {
     grid-column: 2/3;
-    width:100%;
     position: relative;
 }
 
 .containerSecondary::before {
     content: '';
     position: absolute;
-    background: linear-gradient( 0deg,#f9c7c0 0%,#04acaa 100% );
+    background: linear-gradient(0deg, #f9c7c0 0%, #04acaa 100%);
     opacity: 0.4;
-    top: -280%;
+    top: -310%;
     left: 18%;
     width: 50vw;
-    height: 150vh;
+    height: 110vh;
     max-width: 60rem;
-    max-height: 90rem;
     z-index: -1;
     opacity: 0.6;
 }
-
-@media screen and (max-width: 1100px) {
-    .content > div {
-        font-size: 100%
-    }
-    .content > h2 {
-        font-size: 200%
-    }
-}
-
 @media screen and (max-width: 1350px) {
-    .containerMain {    
+    .containerMain {
         margin-left: 5rem;
         margin-right: 5rem;
         margin-bottom: 2rem;
@@ -113,17 +83,29 @@
 }
 
 @media screen and (max-width: 750px) {
-    .containerMain {    
+    .containerMain {
         margin-left: 5rem;
         margin-right: 5rem;
-        margin-bottom: 2rem;
-        margin-top: 5rem;
+        margin-top: 0rem;
+        grid-template-columns: repeat(11, auto) 1rem;
+        grid-template-rows: repeat(7, auto) 1rem repeat(4, auto);
+    }
+    .mainImageContainer {
+        grid-column: 6/12;
+        grid-row: 4/13;
+        z-index: 5;
+    }
+    .header {
+        grid-column: 2/11;
+        grid-row: 9/12;
+        z-index: 6;
     }
     .containerSecondary {
         margin-right: 5rem;
         margin-left: 5rem;
+        margin-bottom: 50rem;
     }
-    .secondaryImageContainer {  
+    .secondaryImageContainer {
         grid-row: 1;
         grid-column: 1;
     }
@@ -131,14 +113,28 @@
         grid-row: 2;
         grid-column: 1;
     }
-    .content > h2 {
-        text-align: center;
-    } 
-}
-
-@media screen and (max-width: 670px) {
-    .header h2 {
-        font-size: 150%;
+    .containerSecondary::before {
+        top: -200%;
     }
 }
 
+@media screen and (max-width: 670px) {
+    .containerSecondary::before {
+        top: -270%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        grid-column: 2/11;
+        grid-row: 10/12;
+        z-index: 6;
+    }
+    .containerSecondary {
+        margin-bottom: 60rem;
+    }
+}
+
+@media screen and (max-height: 975px) {
+    
+}

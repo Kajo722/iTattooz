@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.container:before  {
+.container:before {
     content: '';
     display: block;
     position: absolute;
@@ -33,7 +33,7 @@
     z-index: 2;
     width: 11.875rem;
     height: 11.875rem;
-    background: linear-gradient( 0deg,#f9c7c0 0%,#04acaa 100% );
+    background: linear-gradient(0deg, #f9c7c0 0%, #04acaa 100%);
     opacity: 0.4;
     bottom: -1.25rem;
     right: -1.25rem;
@@ -46,10 +46,17 @@
 }
 
 .noImage {
-   display: none;
+    display: none;
 }
 
 .imageDisplay {
     width: 100%;
     opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        grid-column: 1/13;
+        grid-row: 1/8;
+    }
 }

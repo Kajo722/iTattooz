@@ -13,7 +13,7 @@
     right: 5rem;
     top: 5rem;
     width: 6rem;
-    z-index: 2;
+    z-index: 6;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -22,7 +22,7 @@
 }
 
 .hamburger::before {
-    font-family: moderat,sans-serif;
+    font-family: moderat, sans-serif;
     font-weight: 800;
     -webkit-letter-spacing: 0.16em;
     -moz-letter-spacing: 0.16em;
@@ -38,162 +38,164 @@
     padding: 2rem 2rem;
     position: absolute;
     right: 6.5rem;
-    -webkit-transition: all 250ms cubic-bezier(0.65,0.05,0.36,1) 250ms;
-    transition: all 250ms cubic-bezier(0.65,0.05,0.36,1) 250ms;
+    -webkit-transition: all 250ms cubic-bezier(0.65, 0.05, 0.36, 1) 250ms;
+    transition: all 250ms cubic-bezier(0.65, 0.05, 0.36, 1) 250ms;
     visibility: visible;
     width: 10rem;
     z-index: 1;
 }
 
 .navbarNav {
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  line-height: 1.2;
-  height: 6rem;
-  background-color: #28262c;
-  right: 11.5rem;
-  top: 5rem;
-  display: grid;
-  color: white;
-  list-style: none;
-  text-decoration: none;
-  position: fixed;
-  grid-template-columns: repeat(4, auto);
-  grid-column-gap: 6rem;
-  justify-content: center;
-  align-content: center;
-  z-index: 2;
-  transition: visibility 500ms,width 250ms cubic-bezier(0.65,0.05,0.36,1);
-  width: 0rem;
-  visibility: hidden;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+    height: 6rem;
+    background-color: #28262c;
+    right: 11.5rem;
+    top: 5rem;
+    display: grid;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 6rem;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    transition: visibility 500ms, width 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    width: 0rem;
+    visibility: hidden;
 }
 
 .visibility {
-  visibility: visible;
-  width: 55rem;
+    visibility: visible;
+    width: 55rem;
 }
 
 .navbarNav li {
-  overflow: hidden;
+    overflow: hidden;
 }
 .navbarNav li a {
-  text-decoration: none;
-  color: white;
-  position: relative;
+    text-decoration: none;
+    color: white;
+    position: relative;
 }
 
 li > a:before {
-  content: "";
-  position: absolute;
-  bottom: -0.4rem;
-  width: 100%;
-  height: 0.5rem;
-  background: white;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: .25s linear;
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    width: 100%;
+    height: 0.5rem;
+    background: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.25s linear;
 }
 li > a:hover:before,
 li > a:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
+    visibility: visible;
+    transform: scaleX(1);
 }
-.bar1, .bar2, .bar3 {
-  width: 3rem;
-  height: 0.3rem;
-  background-color: white;
-  margin: 0.3rem 0;
-  align-self: center;
-  transition: 0.4s;
+.bar1,
+.bar2,
+.bar3 {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: white;
+    margin: 0.3rem 0;
+    align-self: center;
+    transition: 0.4s;
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem) ;
-  transform: rotate(-45deg) translate(-9px, 0.6rem) ;
+    -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
+    transform: rotate(-45deg) translate(-9px, 0.6rem);
 }
 
 .change .bar2 {
-  opacity: 0;
+    opacity: 0;
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem) ;
-  transform: rotate(45deg) translate(-0.8rem, -0.8rem) ;
+    -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+    transform: rotate(45deg) translate(-0.8rem, -0.8rem);
 }
 
 .link4 {
-  transition: opacity 150ms ease 100ms;
-  opacity: 0;
+    transition: opacity 150ms ease 100ms;
+    opacity: 0;
 }
 
 .link3 {
-  transition: opacity 150ms ease 180ms;
-  opacity: 0;
+    transition: opacity 150ms ease 180ms;
+    opacity: 0;
 }
 
 .link2 {
-  transition: opacity 150ms ease 260ms;
-  opacity: 0;
+    transition: opacity 150ms ease 260ms;
+    opacity: 0;
 }
 
 .link1 {
-  transition: opacity 150ms ease 360ms;
-  opacity: 0;
+    transition: opacity 150ms ease 360ms;
+    opacity: 0;
 }
 
 .opacity {
-  opacity: 1;
+    opacity: 1;
 }
 
-@media screen and (max-width:1400px) {
-  .hamburger::before {
-    visibility: hidden;
-  }
-  .navbarNav {
-    font-size: 110%;
-    height: 6rem;
-    right: 5rem;
-    top: 11.5rem;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
-    grid-row-gap: 6rem;
-    justify-content: center;
-    align-content: center;
-    width: 0rem;
-  }
-  
-.visibility {
-  visibility: visible;
-  width: 30rem;
-  height: 35rem;
-}
+@media screen and (max-width: 1400px) {
+    .hamburger::before {
+        visibility: hidden;
+    }
+    .navbarNav {
+        font-size: 110%;
+        height: 6rem;
+        right: 5rem;
+        top: 11.5rem;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+        grid-row-gap: 6rem;
+        justify-content: center;
+        align-content: center;
+        width: 0rem;
+    }
+
+    .visibility {
+        visibility: visible;
+        width: 30rem;
+        height: 35rem;
+    }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
     .hamburger {
-      right: 0rem;
-      top: 0rem;
+        right: 0rem;
+        top: 0rem;
     }
 
     .navbarNav {
-      height: 0;
-      right: 0;
-      left:0;
-      top:0;
-      display: grid;
-      grid-template-rows: repeat(4, auto);
-      grid-template-columns: auto;
-      grid-row-gap: 6rem;
-      justify-content: center;
-      align-content: center;
-      width: 0rem;
-      z-index: 5;
+        height: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+        grid-row-gap: 6rem;
+        justify-content: center;
+        align-content: center;
+        width: 0rem;
+        z-index: 5;
     }
-    
-  .visibility {
-    visibility: visible;
-    width: 100vw;
-    height: 100vh;
-  }
+
+    .visibility {
+        visibility: visible;
+        width: 100vw;
+        height: 100vh;
+    }
 }

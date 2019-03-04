@@ -1,0 +1,15 @@
+.feature {
+    font-weight: 800;
+    padding-top: 3rem;
+
+}
+.feature::before {
+    content: '';
+    border: solid black;
+    border-width: 0 0.3rem 0.3rem 0;
+    display: inline-block;
+    padding: 0.3rem;
+    transform: rotate(-45deg);
+    margin-right: 1rem;
+}
+

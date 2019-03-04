@@ -1,9 +1,11 @@
 import React from 'react';
 
-const LinkItem = (props) => {
+const LinkItem = props => {
     return (
-        <li className={props.style}><a href={props.link}>{props.children}</a></li>
-    )
-}
+        <li className={props.style}>
+            <a href={props.link}>{props.children}</a>
+        </li>
+    );
+};
 
 export default LinkItem;

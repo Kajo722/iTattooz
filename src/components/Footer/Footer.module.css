@@ -5,19 +5,17 @@
     width: 100%;
     z-index: 1;
     padding: 1rem 2rem;
-
 }
 
 .footerSection {
     width: 100%;
-
 }
 
 .footerInfo {
     padding: 2rem;
     background-color: rgb(40, 38, 44);
     display: grid;
-    grid-template-columns:  80% 20%;
+    grid-template-columns: 80% 20%;
 }
 
 .footerList {
@@ -47,15 +45,14 @@
 }
 
 .copyright {
-        margin-top:2rem;
-        margin-bottom:2rem;
-        padding: 0.5rem;
-        font-weight: 800;
-        letter-spacing: 0.16em;
-        line-height: 1.23077;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        text-align: center;
-        color: rgb(40, 38, 44);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    line-height: 1.23077;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgb(40, 38, 44);
 }
-

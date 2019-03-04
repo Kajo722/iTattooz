@@ -1,0 +1,9 @@
+.headerSecondary {
+    font-size: 150%;
+}
+
+@media screen and (max-width: 670px) {
+    .headerSecondary {
+        font-size: 100%;
+    }
+}

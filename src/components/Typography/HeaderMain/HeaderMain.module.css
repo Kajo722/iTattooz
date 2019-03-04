@@ -1,0 +1,15 @@
+.headerMain {
+    font-size: 200%;
+}
+
+@media screen and (max-width: 670px) {
+    .headerMain {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .headerMain {
+        font-size: 100%;
+    }
+}
