@@ -82,10 +82,8 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .containerMain {
-        margin-left: 5rem;
-        margin-right: 5rem;
         margin-top: 0rem;
         grid-template-columns: repeat(11, auto) 1rem;
         grid-template-rows: repeat(7, auto) 1rem repeat(4, auto);
@@ -93,12 +91,12 @@
     .mainImageContainer {
         grid-column: 6/12;
         grid-row: 4/13;
-        z-index: 5;
+        z-index: 3;
     }
     .header {
         grid-column: 2/11;
         grid-row: 9/12;
-        z-index: 6;
+        z-index: 3;
     }
     .containerSecondary {
         margin-right: 5rem;
@@ -128,7 +126,7 @@
     .header {
         grid-column: 2/11;
         grid-row: 10/12;
-        z-index: 6;
+        z-index: 3;
     }
     .containerSecondary {
         margin-bottom: 60rem;
@@ -136,5 +134,7 @@
 }
 
 @media screen and (max-height: 975px) {
-    
+    .containerSecondary {
+        margin-top: 20rem;
+    }
 }

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import styles from './HowItWorks.module.css';
-import Media from 'react-media';
 import HeaderMain from '../../components/Typography/HeaderMain/HeaderMain';
 import Features from '../../components/Features/Features/Features';
 import Feature from '../../components/Features/Feature/Feature';
-import Image from '../../components/Image/Image';
 import img from '../../assets/Images/AboutImage2.jpg';
 
 class HowItWorks extends Component {
@@ -12,13 +10,13 @@ class HowItWorks extends Component {
         isMobile: false
     };
 
-    componentDidMount() {
-        window.addEventListener('resize', this.resize());
+    componentWillMount() {
         this.resize();
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.resize);
+    componentDidMount() {
+        this.resize();
+        window.addEventListener('resize', this.resize.bind(this));
     }
 
     resize = () => {
