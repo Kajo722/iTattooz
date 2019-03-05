@@ -1,5 +1,5 @@
 .containerMain {
-    height: 100vh;
+    height: 100rem;
     margin: auto;
     max-width: 130rem;
     display: grid;
@@ -28,7 +28,7 @@
     margin: auto;
     max-width: 130rem;
     grid-template-columns: auto auto 3rem auto auto;
-    margin-bottom: 30rem;
+    margin-bottom: 20rem;
 }
 .content {
     grid-column: 4/5;
@@ -64,7 +64,7 @@
     top: -310%;
     left: 18%;
     width: 50vw;
-    height: 110vh;
+    height: 110rem;
     max-width: 60rem;
     z-index: -1;
     opacity: 0.6;
@@ -127,14 +127,5 @@
         grid-column: 2/11;
         grid-row: 10/12;
         z-index: 3;
-    }
-    .containerSecondary {
-        margin-bottom: 60rem;
-    }
-}
-
-@media screen and (max-height: 975px) {
-    .containerSecondary {
-        margin-top: 20rem;
     }
 }

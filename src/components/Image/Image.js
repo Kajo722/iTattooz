@@ -7,6 +7,7 @@ const Image = props => {
             alt={props.alt}
             style={props.style}
             className={props.className}
+            index={props.index}
         />
     );
 };

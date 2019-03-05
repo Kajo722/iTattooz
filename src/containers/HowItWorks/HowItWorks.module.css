@@ -1,16 +1,10 @@
-.headerContainer {
-    margin: auto;
-    max-width: 130rem;
-    text-align: center;
-    font-size: 3rem;
-    position: relative;
-}
 .container {
     max-width: 130rem;
     margin: auto;
     display: grid;
     grid-row-gap: 5rem;
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .featureContainer {
     display: grid;

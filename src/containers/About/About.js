@@ -13,11 +13,11 @@ import img2 from '../../assets/Images/AboutImage3.jpg';
 const imageMain = [
     {
         start: 'self',
-        end: '100%',
+        duration: 2000,
         properties: [
             {
                 startValue: 0,
-                endValue: 70,
+                endValue: 90,
                 property: 'translateX'
             }
         ]
@@ -26,11 +26,11 @@ const imageMain = [
 const imageSecondary = [
     {
         start: 'self',
-        end: '100%',
+        duration: 2000,
         properties: [
             {
                 startValue: -30,
-                endValue: 70,
+                endValue: 90,
                 property: 'translateY'
             }
         ]

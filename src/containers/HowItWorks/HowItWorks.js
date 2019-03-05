@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './HowItWorks.module.css';
-import HeaderMain from '../../components/Typography/HeaderMain/HeaderMain';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Features from '../../components/Features/Features/Features';
 import Feature from '../../components/Features/Feature/Feature';
 import img from '../../assets/Images/AboutImage2.jpg';
@@ -9,14 +9,13 @@ class HowItWorks extends Component {
     state = {
         isMobile: false
     };
-
-    componentWillMount() {
-        this.resize();
-    }
-
     componentDidMount() {
         this.resize();
         window.addEventListener('resize', this.resize.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resize());
     }
 
     resize = () => {
@@ -32,9 +31,7 @@ class HowItWorks extends Component {
     render() {
         return (
             <>
-                <div className={styles.headerContainer}>
-                    <HeaderMain>How it works? It's simple!</HeaderMain>
-                </div>
+                <SectionHeader>How it works? It's simple!</SectionHeader>
                 <div className={styles.container}>
                     <div className={styles.featureContainer}>
                         <Features
