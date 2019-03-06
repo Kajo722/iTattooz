@@ -28,7 +28,7 @@
     margin: auto;
     max-width: 130rem;
     grid-template-columns: auto auto 3rem auto auto;
-    margin-bottom: 20rem;
+    margin-bottom: 30rem;
 }
 .content {
     grid-column: 4/5;

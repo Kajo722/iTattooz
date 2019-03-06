@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import styles from './Designs.module.css';
 import SectionHeader from '../../components/Typography/SectionHeader/SectionHeader';
-import Image from '../../components/Image/Image';
 import DesignElement from '../../components/DesignElement/DesignElement';
-import img1 from '../../assets/Images/handTattoo2.jpg';
-import img2 from '../../assets/Images/forearmTatto2.jpg';
-import img3 from '../../assets/Images/hipTattoo2.jpg';
-import img4 from '../../assets/Images/neckTattoo2.jpg';
-import img5 from '../../assets/Images/calfTattoo.jpg';
-import img6 from '../../assets/Images/chestTattoo.jpg';
-import img7 from '../../assets/Images/backTattoo2.jpg';
+import img1 from '../../assets/Images/Designs/handTattoo2.jpg';
+import img2 from '../../assets/Images/Designs/forearmTatto2.jpg';
+import img3 from '../../assets/Images/Designs/hipTattoo2.jpg';
+import img4 from '../../assets/Images/Designs/neckTattoo2.jpg';
+import img5 from '../../assets/Images/Designs/calfTattoo.jpg';
+import img6 from '../../assets/Images/Designs/chestTattoo.jpg';
+import img7 from '../../assets/Images/Designs/backTattoo2.jpg';
 
 class Designs extends Component {
     state = {

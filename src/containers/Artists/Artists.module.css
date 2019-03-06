@@ -1,27 +1,84 @@
+.description {
+    margin: auto;
+    max-width: 130rem;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
 .containerMain {
-    width: 100%;
-    height: 100vh;
-    background: blue;
-    z-index: 1;
-    padding-top: 5vh;
-    margin-top: 10rem;
+    padding-top: 5rem;
+    margin-top: 20rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+    transition: all 1s ease-out;
 }
 
 .containerArtists {
-    max-width: 90vw;
-    height: 90vh;
-    margin: auto;
-    z-index: 2;
     display: grid;
-    grid-template-columns: 30vw 10vw 50vw;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40rem;
 }
 
 .artistsList {
     grid-column: 1/2;
-    background: black;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    grid-template-rows: repeat(6, min-content);
+    grid-row-gap: 2rem;
+    font-size: 6rem;
 }
 
 .artistsImage {
-    grid-column: 3/4;
-    background: green;
+    grid-column: 2/3;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1750px) {
+    .artistsList {
+
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .artistsList {
+
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .artistsList {
+
+        font-size: 2rem;
+    }
+    .containerArtists {
+        grid-column-gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .artistsList {
+
+        font-size: 1.5rem;
+    }
+    .containerMain {
+        padding-top: 2rem;
+        margin-top: 8rem;
+        padding-right: 2rem;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+    }
 }

@@ -1,0 +1,23 @@
+.text {
+    color: white;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom:0;
+    width: 0%;
+    height: 0.5rem;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: left;
+    -webkit-transition: all 0.5s cubic-bezier(.694,0,.335,1);
+    transition: all 0.5s cubic-bezier(.694,0,.335,1); 
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
