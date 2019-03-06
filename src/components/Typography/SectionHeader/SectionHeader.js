@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SectionHeader.module.css';
-import HeaderMain from '../Typography/HeaderMain/HeaderMain';
+import HeaderMain from '../HeaderMain/HeaderMain';
 
 const sectionHeader = props => {
     return (

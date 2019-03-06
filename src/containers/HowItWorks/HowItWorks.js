@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './HowItWorks.module.css';
-import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import SectionHeader from '../../components/Typography/SectionHeader/SectionHeader';
 import Features from '../../components/Features/Features/Features';
 import Feature from '../../components/Features/Feature/Feature';
 import img from '../../assets/Images/AboutImage2.jpg';

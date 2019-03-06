@@ -1,0 +1,27 @@
+.containerMain {
+    width: 100%;
+    height: 100vh;
+    background: blue;
+    z-index: 1;
+    padding-top: 5vh;
+    margin-top: 10rem;
+}
+
+.containerArtists {
+    max-width: 90vw;
+    height: 90vh;
+    margin: auto;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 30vw 10vw 50vw;
+}
+
+.artistsList {
+    grid-column: 1/2;
+    background: black;
+}
+
+.artistsImage {
+    grid-column: 3/4;
+    background: green;
+}

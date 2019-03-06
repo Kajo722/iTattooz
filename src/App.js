@@ -3,6 +3,7 @@ import Layout from '../src/hoc/Layout/Layout';
 import About from './containers/About/About';
 import HowItWorks from './containers/HowItWorks/HowItWorks';
 import Designs from './containers/Designs/Designs';
+import Artists from './containers/Artists/Artists';
 class App extends Component {
     render() {
         return (
@@ -11,6 +12,7 @@ class App extends Component {
                     <About />
                     <HowItWorks />
                     <Designs />
+                    <Artists/>
                 </Layout>
             </>
         );
