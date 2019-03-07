@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styles from './Designs.module.css';
-import SectionHeader from '../../components/Typography/SectionHeader/SectionHeader';
-import DesignElement from '../../components/DesignElement/DesignElement';
-import img1 from '../../assets/Images/Designs/handTattoo2.jpg';
-import img2 from '../../assets/Images/Designs/forearmTatto2.jpg';
-import img3 from '../../assets/Images/Designs/hipTattoo2.jpg';
-import img4 from '../../assets/Images/Designs/neckTattoo2.jpg';
-import img5 from '../../assets/Images/Designs/calfTattoo.jpg';
-import img6 from '../../assets/Images/Designs/chestTattoo.jpg';
-import img7 from '../../assets/Images/Designs/backTattoo2.jpg';
+import Section from '../../../components/Typography/Section/Section';
+import DesignElement from '../../../components/DesignElement/DesignElement';
+import img1 from '../../../assets/Images/Designs/handTattoo2.jpg';
+import img2 from '../../../assets/Images/Designs/forearmTatto2.jpg';
+import img3 from '../../../assets/Images/Designs/hipTattoo2.jpg';
+import img4 from '../../../assets/Images/Designs/neckTattoo2.jpg';
+import img5 from '../../../assets/Images/Designs/calfTattoo.jpg';
+import img6 from '../../../assets/Images/Designs/chestTattoo.jpg';
+import img7 from '../../../assets/Images/Designs/backTattoo2.jpg';
 
 class Designs extends Component {
     state = {
@@ -54,7 +54,7 @@ class Designs extends Component {
     render() {
         return (
             <>
-                <SectionHeader>Discover beautiful designs</SectionHeader>
+                <Section header={'Discover endless posibilities'} description={'In iTattooz we let our customers choose from all variaties of designs - everything is possible. Imagination is the only limit. You can express yourself anywhere on your body.'}/>
                 <div className={styles.containerMain}>
                     <div className={styles.designsContainer}>
                         <DesignElement

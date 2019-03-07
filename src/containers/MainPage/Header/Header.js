@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styles from './Header.module.css';
-import Logo from '../../components/Logo/Logo';
-import Navbar from '../../components/Navigation/Navbar/Navbar';
 
 class Header extends Component {
     state = {
@@ -53,19 +51,17 @@ class Header extends Component {
         if (this.state.index === 3) {
             headerSecondary = (
                 <div className={styles.showSecondaryHeader}>
-                    For artists. By artists.
+                    Made by you. For you.
                 </div>
             );
         }
         return (
             <>
                 <div className={styles.header}>
-                    <Logo />
                     <div className={styles.headerText}>
                         {headerMain}
                         {headerSecondary}
                     </div>
-                    <Navbar />
                 </div>
             </>
         );

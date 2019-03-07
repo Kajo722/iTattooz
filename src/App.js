@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
+import { Route, withRouter, Redirect, Switch } from 'react-router-dom';
 import Layout from '../src/hoc/Layout/Layout';
-import About from './containers/About/About';
-import HowItWorks from './containers/HowItWorks/HowItWorks';
-import Designs from './containers/Designs/Designs';
-import Artists from './containers/Artists/Artists';
+import MainPage from './containers/MainPage/MainPage'
+import Artists from './containers/Artists/Artists'
+import Career from './containers/Career/Career'
+import ContactUs from './containers/ContactUs/ContactUs'
+
 class App extends Component {
     render() {
         return (
             <>
                 <Layout>
-                    <About />
-                    <HowItWorks />
-                    <Designs />
-                    <Artists/>
+                    <Switch>
+                    <Route path='/' exact component={MainPage} />
+                    <Route path='/artists' exact component={Artists} />
+                    <Route path='/career' exact component={Career} />
+                    <Route path='/contact' exact component={ContactUs} />
+                    </Switch>
                 </Layout>
             </>
         );

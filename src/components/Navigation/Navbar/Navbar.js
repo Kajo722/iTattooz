@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import styles from './Navbar.module.css';
 import LinkList from './LinkList/LinkList';
 import LinkItem from './LinkItem/LinkItem';
@@ -35,29 +36,28 @@ class Navbar extends Component {
                         link='/'
                         style={`${styles.link1} ${
                             this.state.active ? styles.opacity : ''
-                        }`}>
-                        Home
+                        }`}><Link to='/'>Home</Link>
                     </LinkItem>
                     <LinkItem
                         link='/'
                         style={`${styles.link2} ${
                             this.state.active ? styles.opacity : ''
                         }`}>
-                        Artists
+                        <Link to='artists'>Artists</Link>
                     </LinkItem>
                     <LinkItem
                         link='/'
                         style={`${styles.link3} ${
                             this.state.active ? styles.opacity : ''
                         }`}>
-                        Career
+                        <Link to='career'>Career</Link>
                     </LinkItem>
                     <LinkItem
                         link='/'
                         style={`${styles.link4} ${
                             this.state.active ? styles.opacity : ''
                         }`}>
-                        Contact Us
+                        <Link to='/contact'>Contact Us</Link>
                     </LinkItem>
                 </LinkList>
             </div>

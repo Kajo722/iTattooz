@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import styles from './Artists.module.css'
+import styles from './Career.module.css'
 
-class Artists extends Component {
+class Career extends Component {
     render(){
         return(
             <div></div>
         )
     }
 }
-export default Artists;
+export default Career;

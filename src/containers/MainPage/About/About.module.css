@@ -1,3 +1,4 @@
+
 .containerMain {
     height: 100rem;
     margin: auto;
@@ -5,7 +6,7 @@
     display: grid;
     grid-template-rows: repeat(9, auto);
     grid-template-columns: repeat(10, auto);
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 .mainImageContainer {
     position: relative;
@@ -43,10 +44,10 @@
     height: 2.8125rem;
     top: 1.25rem;
     border-bottom-width: 0.75rem;
-    border-bottom-color: #04acaa;
+    border-bottom-color: #eaa5ff;
     border-bottom-style: solid;
     border-right-width: 0.75rem;
-    border-right-color: #04acaa;
+    border-right-color: #eaa5ff;
     border-right-style: solid;
     top: 30rem;
     right: 30rem;
@@ -59,7 +60,7 @@
 .containerSecondary::before {
     content: '';
     position: absolute;
-    background: linear-gradient(0deg, #f9c7c0 0%, #04acaa 100%);
+    background: linear-gradient(0deg, #d8d2d1 0%, #eaa5ff 100%);
     opacity: 0.4;
     top: -310%;
     left: 18%;

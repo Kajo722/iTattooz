@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import styles from './Artists.module.css'
+import styles from './ContactUs.module.css'
 
-class Artists extends Component {
+class ContactUs extends Component {
     render(){
         return(
             <div></div>
         )
     }
 }
-export default Artists;
+export default ContactUs;
