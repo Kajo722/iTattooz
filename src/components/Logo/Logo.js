@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Logo.module.css';
 
 const debounce = (func, wait) => {
@@ -31,7 +32,7 @@ class Logo extends Component {
         const isScrolling = !!this.state.scrollPositionY;
         return (
             <div className={isScrolling ? styles.logoSmall : styles.logo}>
-                iTatt<span className={styles.span}>o</span>oz
+                <Link to='/'>iTatt<span className={styles.span}>o</span>oz</Link>
             </div>
         );
     }

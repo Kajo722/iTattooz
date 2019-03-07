@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import LinkItem from '../Navigation/Navbar/LinkItem/LinkItem'
 import styles from './Footer.module.css';
 import Logo from '../Logo/Logo';
+
 
 class Footer extends Component {
     render() {
@@ -9,18 +12,18 @@ class Footer extends Component {
                 <section className={styles.footerSection}>
                     <div className={styles.footerInfo}>
                         <ul className={styles.footerList}>
-                            <li>
-                                <a href='/'>Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href='/'>Cookie Policy</a>
-                            </li>
-                            <li>
-                                <a href='/'>Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href='/'>Contact Us</a>
-                            </li>
+                            <LinkItem linkTo={'terms'}>
+                                Terms & Conditions
+                            </LinkItem>
+                            <LinkItem linkTo={'cookie'}>
+                                Cookie Policy
+                            </LinkItem>
+                            <LinkItem linkTo={'privacy'}>
+                                Privacy Policy
+                            </LinkItem>
+                            <LinkItem linkTo={'contact'}>
+                                Contact Us
+                            </LinkItem>
                         </ul>
                         <Logo logo={styles.logo} />
                     </div>

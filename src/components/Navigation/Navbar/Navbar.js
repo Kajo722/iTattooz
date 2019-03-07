@@ -33,31 +33,27 @@ class Navbar extends Component {
                         this.state.active ? styles.visibility : ''
                     }`}>
                     <LinkItem
-                        link='/'
                         style={`${styles.link1} ${
                             this.state.active ? styles.opacity : ''
-                        }`}><Link to='/'>Home</Link>
+                        }`} linkTo={'/'}>Home
                     </LinkItem>
                     <LinkItem
-                        link='/'
                         style={`${styles.link2} ${
                             this.state.active ? styles.opacity : ''
-                        }`}>
-                        <Link to='artists'>Artists</Link>
+                        }`} linkTo={'artists'}>
+                        Artists
                     </LinkItem>
                     <LinkItem
-                        link='/'
                         style={`${styles.link3} ${
                             this.state.active ? styles.opacity : ''
-                        }`}>
-                        <Link to='career'>Career</Link>
+                        }`} linkTo={'career'}>
+                        Career
                     </LinkItem>
                     <LinkItem
-                        link='/'
                         style={`${styles.link4} ${
                             this.state.active ? styles.opacity : ''
-                        }`}>
-                        <Link to='/contact'>Contact Us</Link>
+                        }`} linkTo={'contact'}>
+                        Contact Us
                     </LinkItem>
                 </LinkList>
             </div>
