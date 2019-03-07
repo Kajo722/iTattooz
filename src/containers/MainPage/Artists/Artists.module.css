@@ -13,13 +13,17 @@
     grid-template-columns: auto auto;
     grid-column-gap: 40rem;
 }
+.blabla {
+    display: inline-block;
+    position: relative;
+}
 
 .artistsList {
     grid-column: 1/2;
     display: grid;
     justify-content: start;
     align-content: center;
-    grid-template-rows: repeat(6, fit-content);
+    grid-template-rows: fit-content;
     grid-row-gap: 2rem;
     font-size: 6rem;
 }

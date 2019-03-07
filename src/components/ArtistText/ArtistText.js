@@ -6,9 +6,13 @@ const artistText = props => {
         <div
             onMouseEnter={props.hoverOn}
             onMouseLeave={props.hoverOff}
-            className={styles.text}>
+            className={styles.text}><div className={props.blabla}>
             {props.children}
-            <div className={props.index === props.number ? [styles.underline, styles.visible].join(' ') : styles.underline} />
+
+<div className={props.index === props.number ? [styles.underline, styles.visible].join(' ') : styles.underline} />
+            </div>
+            
+            
         </div>
     );
 };

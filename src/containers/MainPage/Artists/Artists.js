@@ -95,15 +95,16 @@ class Artists extends Component {
                                 hoverOff={this.hoverOff}
                                 number={0}
                                 index={this.state.index}
-                                hovering={this.state.hovering}>
-                                Clare Melton
+                                hovering={this.state.hovering}
+                                blabla={styles.blabla}>Clare Melton
+                                
                             </ArtistText>
                             <ArtistText
                                 hoverOn={() => this.hoverOn(1)}
                                 hoverOff={this.hoverOff}
                                 number={1}
                                 index={this.state.index}
-                                hovering={this.state.hovering}>
+                                hovering={this.state.hovering} blabla={styles.blabla}>
                                 Guto Rodriguez
                             </ArtistText>
                             <ArtistText
@@ -111,7 +112,7 @@ class Artists extends Component {
                                 hoverOff={this.hoverOff}
                                 number={2}
                                 index={this.state.index}
-                                hovering={this.state.hovering}>
+                                hovering={this.state.hovering} blabla={styles.blabla}>
                                 Aoife Arellano
                             </ArtistText>
                             <ArtistText
@@ -119,7 +120,7 @@ class Artists extends Component {
                                 hoverOff={this.hoverOff}
                                 number={3}
                                 index={this.state.index}
-                                hovering={this.state.hovering}>
+                                hovering={this.state.hovering} blabla={styles.blabla}>
                                 Toni Bernal
                             </ArtistText>
                             <ArtistText
@@ -127,7 +128,7 @@ class Artists extends Component {
                                 hoverOff={this.hoverOff}
                                 number={4}
                                 index={this.state.index}
-                                hovering={this.state.hovering}>
+                                hovering={this.state.hovering} blabla={styles.blabla}>
                                 Sanaa Duke
                             </ArtistText>
                         </div>
