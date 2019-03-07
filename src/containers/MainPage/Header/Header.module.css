@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 10vh auto 20vh;
     grid-template-rows: 50vh auto 20vh;
-    margin-bottom: 20rem;
+
 }
 
 .headerText {

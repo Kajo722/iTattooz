@@ -1,11 +1,9 @@
 .containerMain {
     padding-top: 5rem;
-    margin-top: 20rem;
     padding-right: 5rem;
     padding-left: 5rem;
     padding-bottom: 5rem;
     transition: all 1s ease-out;
-    margin-bottom: 20rem;
 }
 
 .containerArtists {
@@ -73,7 +71,6 @@
     }
     .containerMain {
         padding-top: 2rem;
-        margin-top: 8rem;
         padding-right: 2rem;
         padding-left: 4rem;
         padding-bottom: 2rem;

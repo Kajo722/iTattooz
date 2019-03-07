@@ -31,7 +31,7 @@ const imageSecondary = [
         properties: [
             {
                 startValue: -30,
-                endValue: 90,
+                endValue: 60,
                 property: 'translateY'
             }
         ]
@@ -40,12 +40,16 @@ const imageSecondary = [
 
 class About extends Component {
     state = {
-        aboutText:
-            'The Stylist Group is a leading digital publisher and media platform with pioneering brands Stylist and Emerald Street. Within an inspiring, fast-paced, entrepreneurial environment we create original magazines and digital brands for Stylist Women - our successful, sophisticated, dynamic and urban audience. These people have very little time, a considerable disposable income and no patience with inauthentic attempts to try to engage them. Our purpose is to create content Stylist Women are proud to enjoy.',
         scrolled: null
     };
 
     render() {
+        let aboutText = `The iTattooz is an innovative tattoo studio with pioneering brands and artists creating amazing brand for people ready to express themselves. 
+        With the innovative approach to tattoo creation we created a new way to finally make the tattoos any person could ever dream of. 
+        Our brand is a way for any Man and Women - our successful, sophisticated, dynamic and urban audience, to become an artist.  
+        Time of tattoes made of templates has ended. iTattoz lets our customers to be involved in the process of tattoo design creation from the scratch. 
+        Our purpose is to help tattoo enthusiasts to create content they can be proud of and enjoy.`;
+
         return (
             <>
                 <Section
@@ -54,61 +58,61 @@ class About extends Component {
                         'Experience the proccess of tattoo creation by yourself. Be a part of it.'
                     }
                 />
-                    <div className={styles.containerMain}>
-                        <AboutSlideshow />
-                        <div className={styles.mainImageContainer}>
-                            <Media query='(max-width: 750px)'>
-                                {matches =>
-                                    matches ? (
+                <div className={styles.containerMain}>
+                    <AboutSlideshow />
+                    <div className={styles.mainImageContainer}>
+                        <Media query='(max-width: 750px)'>
+                            {matches =>
+                                matches ? (
+                                    <Image
+                                        src={img1}
+                                        alt='About Us section showing person with jacket Born This Way'
+                                        style={{ width: '100%' }}
+                                    />
+                                ) : (
+                                    <Plx parallaxData={imageMain}>
                                         <Image
                                             src={img1}
                                             alt='About Us section showing person with jacket Born This Way'
                                             style={{ width: '100%' }}
                                         />
-                                    ) : (
-                                        <Plx parallaxData={imageMain}>
-                                            <Image
-                                                src={img1}
-                                                alt='About Us section showing person with jacket Born This Way'
-                                                style={{ width: '100%' }}
-                                            />
-                                        </Plx>
-                                    )
-                                }
-                            </Media>
-                        </div>
-                        <div className={styles.header}>
-                            <HeaderMain>Create your own tattoos</HeaderMain>
-                            <HeaderSecondary>& customize them</HeaderSecondary>
-                        </div>
+                                    </Plx>
+                                )
+                            }
+                        </Media>
                     </div>
-                    <div className={styles.containerSecondary}>
-                        <div className={styles.secondaryImageContainer}>
-                            <Media query='(max-width: 750px)'>
-                                {matches =>
-                                    matches ? (
+                    <div className={styles.header}>
+                        <HeaderMain>Create your own tattoos</HeaderMain>
+                        <HeaderSecondary>& customize them</HeaderSecondary>
+                    </div>
+                </div>
+                <div className={styles.containerSecondary}>
+                    <div className={styles.secondaryImageContainer}>
+                        <Media query='(max-width: 750px)'>
+                            {matches =>
+                                matches ? (
+                                    <Image
+                                        src={img2}
+                                        alt='img'
+                                        style={{ width: '100%' }}
+                                    />
+                                ) : (
+                                    <Plx parallaxData={imageSecondary}>
                                         <Image
                                             src={img2}
                                             alt='img'
                                             style={{ width: '100%' }}
                                         />
-                                    ) : (
-                                        <Plx parallaxData={imageSecondary}>
-                                            <Image
-                                                src={img2}
-                                                alt='img'
-                                                style={{ width: '100%' }}
-                                            />
-                                        </Plx>
-                                    )
-                                }
-                            </Media>
-                        </div>
-                        <div className={styles.content}>
-                            <HeaderMain>About Us</HeaderMain>
-                            <Paragraph>{this.state.aboutText}</Paragraph>
-                        </div>
+                                    </Plx>
+                                )
+                            }
+                        </Media>
                     </div>
+                    <div className={styles.content}>
+                        <HeaderMain>About Us</HeaderMain>
+                        <Paragraph>{aboutText}</Paragraph>
+                    </div>
+                </div>
             </>
         );
     }

@@ -1,12 +1,13 @@
 import React from 'react';
-import Plx from 'react-plx'
+import Plx from 'react-plx';
+import styles from './Section.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import SectionDescription from '../SectionDescription/SectionDescription';
 
 const text = [
     {
         start: 'self',
-        duration: 500,
+        duration: 300,
         properties: [
             {
                 startValue: 0,
@@ -30,17 +31,12 @@ const text = [
 
 const Section = props => {
     return (
-   
         <Plx parallaxData={text}>
+            <div className={styles.sectionContainer}>
                 <SectionHeader>{props.header}</SectionHeader>
                 <SectionDescription>{props.description}</SectionDescription>
+            </div>
         </Plx>
-  
-
-
-  
-
-
     );
 };
 

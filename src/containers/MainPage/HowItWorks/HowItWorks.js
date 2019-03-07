@@ -42,20 +42,20 @@ class HowItWorks extends Component {
                     <div className={styles.container}>
                         <div className={styles.featureContainer}>
                             <Features
-                                headerText='blalbalbalbablabla'
-                                paragraphText='sadadasadssdfsdfdsfdssdfsd sdf s fsd fsdf sd sd sd fsdf sss fasdf sdf asd fsaf asdf asf sadf sadf saf saf as fasf sadfsadddddddddddddddf sadfsadfasfsfadfsa fsaddf sf sf ddasd'
+                                headerText='Create initial design'
+                                paragraphText='This is the time to fully express yourself. With the help of guidelines and software provided by iTattooz you can create any desing you can only imagine. When you are done, send us your work!'
                                 containerClassName={styles.featureContent}
                                 imageClassName={styles.image}
                                 imgSrc={img1}>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
+                                <Feature>Contact us and get tools to start creating</Feature>
+                                <Feature>Design your fully-personalized tattoo</Feature>
+                                <Feature>Send the project directly to chosen artist</Feature>
                             </Features>
                         </div>
                         <div className={styles.featureContainer}>
                             <Features
-                                headerText='blalbalbalbablabla'
-                                paragraphText='sadadasadssdfsdfdsfdssdfsd sdf s fsd fsdf sd sd sd fsdf sss fasdf sdf asd fsaf asdf asf sadf sadf saf saf as fasf sadfsadddddddddddddddf sadfsadfasfsfadfsa fsaddf sf sf ddasd'
+                                headerText='Meet the artist'
+                                paragraphText='After receiving your initial project, we set up a series of meetings between you and our tattoo artist. You can discuss your work and instruct the artist to make your design come to life.'
                                 containerClassName={
                                     this.state.isMobile
                                         ? styles.featureContent
@@ -72,21 +72,21 @@ class HowItWorks extends Component {
                                           )
                                 }
                                 imgSrc={img2}>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
+                                <Feature>Arrange a metting with artist</Feature>
+                                <Feature>Discuss the artwork</Feature>
+                                <Feature>Get the design draft prepared by designer</Feature>
                             </Features>
                         </div>
                         <div className={styles.featureContainer}>
                             <Features
-                                headerText='blalbalbalbablabla'
-                                paragraphText='sadadasadssdfsdfdsfdssdfsd sdf s fsd fsdf sd sd sd fsdf sss fasdf sdf asd fsaf asdf asf sadf sadf saf saf as fasf sadfsadddddddddddddddf sadfsadfasfsfadfsa fsaddf sf sf ddasd'
+                                headerText='Make your tattoo'
+                                paragraphText='After accepting final design arrange a tattoo session in a time of your chosing. Our staff will provide you with any essential accessories and information for tattoo recovery.'
                                 containerClassName={styles.featureContent}
                                 imageClassName={styles.image}
                                 imgSrc={img3}>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
-                                <Feature>blablablblalbalab</Feature>
+                                <Feature>Accept the final project or ask for corrections</Feature>
+                                <Feature>Choose a suitable date for your session</Feature>
+                                <Feature>Get the tattoo of your dreams designed by YOU!</Feature>
                             </Features>
                         </div>
                     </div>
