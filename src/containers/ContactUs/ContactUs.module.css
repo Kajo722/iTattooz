@@ -1,6 +1,5 @@
 .containerMain {
     width: 100%;
-
     padding-right: 10rem;
     padding-left: 10rem;
     margin: auto;
@@ -11,10 +10,10 @@
 
 .containerGrid {
     display: grid;
-    grid-column: auto auto;
+    grid-template-columns: auto auto;
     grid-column-gap: 5rem;
     grid-row-gap: 10rem;
-    grid-row: auto auto;
+    grid-template-rows: auto auto;
 }
 
 .info {

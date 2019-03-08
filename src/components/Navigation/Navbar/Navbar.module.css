@@ -75,11 +75,13 @@
 
 .navbarNav li {
     overflow: hidden;
+    position: relative;
 }
 .navbarNav li a {
     text-decoration: none;
     color: white;
-    position: relative;
+
+    display: inline-block;
 }
 
 li > a:before {
@@ -152,16 +154,15 @@ li > a:focus:before {
         visibility: hidden;
     }
     .navbarNav {
+        
         font-size: 110%;
         height: 6rem;
         right: 5rem;
         top: 11.5rem;
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: auto;
-        grid-row-gap: 6rem;
-        justify-content: center;
-        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 0rem;
     }
 
@@ -183,12 +184,10 @@ li > a:focus:before {
         right: 0;
         left: 0;
         top: 0;
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: auto;
-        grid-row-gap: 6rem;
-        justify-content: center;
-        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 0rem;
         z-index: 4;
     }

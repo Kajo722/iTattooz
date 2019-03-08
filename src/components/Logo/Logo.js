@@ -32,7 +32,7 @@ class Logo extends Component {
         const isScrolling = !!this.state.scrollPositionY;
         return (
             <div className={isScrolling ? styles.logoSmall : styles.logo}>
-                <Link to='/'>iTatt<span className={styles.span}>o</span>oz</Link>
+                <Link to='/'><span className={styles.spanPurple}>i</span>Tatt<span className={styles.spanGrey}>o</span>oz</Link>
             </div>
         );
     }
