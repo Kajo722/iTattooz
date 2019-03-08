@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './Terms.module.css'
-import PrivacyContainer from '../../components/Privacy/PrivacyContainer/PrivacyContainer';
-import PrivacyHeader from '../../components/Privacy/PrivacyHeader/PrivacyHeader';
+import PageHeaderContainer from '../../components/PagesHeader/PageHeaderContainer/PageHeaderContainer';
+import PageHeader from '../../components/PagesHeader/PageHeader/PageHeader';
 
 const terms = () => {
     return (
-        <PrivacyContainer>
-            <PrivacyHeader>Terms & Conditions</PrivacyHeader>
+        <PageHeaderContainer>
+            <PageHeader>Terms & Conditions</PageHeader>
             <div className={styles.content}>
                 <p className={styles.bold}>What are Cookies?</p>
                 <p>
@@ -47,7 +47,7 @@ const terms = () => {
                     all session cookies are deleted.
                 </p>
             </div>
-        </PrivacyContainer>
+        </PageHeaderContainer>
     );
 };
 

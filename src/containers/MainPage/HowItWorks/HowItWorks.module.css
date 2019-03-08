@@ -17,9 +17,9 @@
 }
 
 .featureContent {
-        display: grid;
-        grid-template-rows: auto auto auto;
-    }
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
 .feature2 {
     grid-column: 2/3;
     grid-row: 1;
@@ -28,7 +28,6 @@
     grid-column: 1/2;
     grid-row: 1;
 }
-
 
 @media screen and (max-width: 800px) {
     .featureContainer {
@@ -42,7 +41,7 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
-   .image {
+    .image {
         width: 100%;
     }
 }

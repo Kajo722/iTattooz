@@ -2,21 +2,32 @@
     color: white;
 }
 
+
 .underline {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     width: 0%;
     height: 0.5rem;
     background-color: white;
     opacity: 0;
     visibility: hidden;
     transform-origin: left;
-    -webkit-transition: all 0.5s cubic-bezier(.694,0,.335,1);
-    transition: all 0.5s cubic-bezier(.694,0,.335,1); 
+    -webkit-transition: all 0.5s cubic-bezier(0.694, 0, 0.335, 1);
+    transition: all 0.5s cubic-bezier(0.694, 0, 0.335, 1);
+}
+.link {
+    text-decoration: none;
+    color: white;
 }
 
 .visible {
     visibility: visible;
     opacity: 1;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .underline {
+        height: 0.3rem;
+    }
 }

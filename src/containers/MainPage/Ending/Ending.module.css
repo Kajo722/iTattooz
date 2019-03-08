@@ -1,0 +1,50 @@
+.container {
+    margin: auto;
+    max-width: 60rem;
+    margin-bottom: 10rem;
+    background: none;
+    text-align: center;
+    font-size: 5rem;
+    display: block;
+    width: 100%;
+    border: 3px solid #eaa5ff;
+    border-radius: 4rem;
+    margin-top: -15rem;
+    padding: 1rem;
+    animation: button 0.75s linear infinite;
+}
+
+.container:hover {
+    animation-play-state: paused;
+    background: linear-gradient(180deg, #eaa5ff 10%, #d8d2d1 100%);
+    border: 3px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: inline-block;
+}
+
+@keyframes button {
+    0% {
+        transform: translateY(3px);
+    }
+
+    25% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    75% {
+        transform: translateY(-0px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}

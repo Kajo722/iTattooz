@@ -11,7 +11,7 @@
     grid-template-columns: auto auto;
     grid-column-gap: 40rem;
 }
-.blabla {
+.underline {
     display: inline-block;
     position: relative;
 }
@@ -66,8 +66,8 @@
 
 @media screen and (max-width: 750px) {
     .artistsList {
-
         font-size: 1.5rem;
+        grid-row-gap: 1rem;
     }
     .containerMain {
         padding-top: 2rem;

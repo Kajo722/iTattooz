@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PrivacyContainer.module.css'
+import styles from './PageHeaderContainer.module.css'
 
 const privacy = (props) => {
     return(

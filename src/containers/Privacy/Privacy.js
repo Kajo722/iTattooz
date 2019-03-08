@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './Privacy.module.css'
-import PrivacyContainer from '../../components/Privacy/PrivacyContainer/PrivacyContainer';
-import PrivacyHeader from '../../components/Privacy/PrivacyHeader/PrivacyHeader';
+import PageHeaderContainer from '../../components/PagesHeader/PageHeaderContainer/PageHeaderContainer';
+import PageHeader from '../../components/PagesHeader/PageHeader/PageHeader';
 
 const privacy = (props) => {
     return (
-        <PrivacyContainer>
-            <PrivacyHeader>
+        <PageHeaderContainer>
+            <PageHeader>
                 Privacy
-            </PrivacyHeader>
+            </PageHeader>
             <div className={styles.content}>
                 <p className={styles.bold}>What are Cookies?</p>
                 <p>
@@ -49,7 +49,7 @@ const privacy = (props) => {
                     all session cookies are deleted.
                 </p>
                 </div>
-        </PrivacyContainer>
+        </PageHeaderContainer>
     )
 }
 
