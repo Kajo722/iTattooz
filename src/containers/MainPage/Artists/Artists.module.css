@@ -24,6 +24,7 @@
     grid-template-rows: fit-content;
     grid-row-gap: 2rem;
     font-size: 6rem;
+    font-weight: bold;
 }
 
 .artistsImage {

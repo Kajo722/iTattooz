@@ -17,8 +17,8 @@ const imageMain = [
         duration: 2000,
         properties: [
             {
-                startValue: 0,
-                endValue: 90,
+                startValue: -15,
+                endValue: 60,
                 property: 'translateX'
             }
         ]
@@ -61,7 +61,7 @@ class About extends Component {
                 <div className={styles.containerMain}>
                     <AboutSlideshow />
                     <div className={styles.mainImageContainer}>
-                        <Media query='(max-width: 750px)'>
+                        <Media query='(max-width: 1000px)'>
                             {matches =>
                                 matches ? (
                                     <Image
@@ -88,7 +88,7 @@ class About extends Component {
                 </div>
                 <div className={styles.containerSecondary}>
                     <div className={styles.secondaryImageContainer}>
-                        <Media query='(max-width: 750px)'>
+                        <Media query='(max-width: 1000px)'>
                             {matches =>
                                 matches ? (
                                     <Image

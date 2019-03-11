@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Slide from 'react-reveal/Slide';
 import styles from './Ending.module.css';
 import { Link } from 'react-router-dom';
 import Section from '../../../components/Typography/Section/Section';

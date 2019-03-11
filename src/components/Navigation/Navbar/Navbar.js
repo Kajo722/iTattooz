@@ -7,10 +7,10 @@ class Navbar extends Component {
     state = {
         active: false,
         links: [
-            { id: 1, text: 'Home', link: '/' },
-            { id: 2, text: 'Artists', link: 'artists' },
-            { id: 3, text: 'Career', link: 'career' },
-            { id: 4, text: 'Contact Us', link: 'contact' }
+            { id: 1, style: styles.link1, text: 'Home', link: '/' },
+            { id: 2, style: styles.link2, text: 'Artists', link: 'artists' },
+            { id: 3, style: styles.link3, text: 'Career', link: 'career' },
+            { id: 4, style: styles.link4, text: 'Contact Us', link: 'contact' }
         ]
     };
 
@@ -25,7 +25,7 @@ class Navbar extends Component {
         const links = this.state.links.map(link => {
             return (
                 <LinkItem
-                    style={`${styles.link + link.id} ${
+                    style={`${link.style} ${
                         this.state.active ? styles.opacity : ''
                     }`}
                     linkTo={link.link}>

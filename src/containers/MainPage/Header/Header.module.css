@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: 10vh auto 20vh;
     grid-template-rows: 50vh auto 20vh;
-
 }
 
 .headerText {
@@ -29,6 +28,14 @@
     animation: slide-up 1.5s ease-in;
 }
 
+@media screen and (max-height: 800px) {
+    .headerText {
+        font-size: 6rem;
+    }
+    .showSecondaryHeader {
+        font-size: 4rem;
+    }
+}
 @media screen and (max-height: 950px) {
     .header {
         grid-template-rows: 60vh auto 20vh;
@@ -94,7 +101,7 @@
         grid-template-rows: 70vh auto 20vh;
     }
     .headerText {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .showSecondaryHeader {
         font-size: 2.5rem;
@@ -106,10 +113,10 @@
         grid-template-rows: 70vh auto 20vh;
     }
     .headerText {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
     .showSecondaryHeader {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 

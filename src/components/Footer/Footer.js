@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import LinkItem from '../Navigation/Navbar/LinkItem/LinkItem';
 import styles from './Footer.module.css';
-import Logo from '../Logo/Logo';
 
 class Footer extends Component {
     render() {
@@ -11,16 +10,19 @@ class Footer extends Component {
                 <section className={styles.footerSection}>
                     <div className={styles.footerInfo}>
                         <ul className={styles.footerList}>
-                            <LinkItem linkTo={'terms'}>
-                                Terms & Conditions
-                            </LinkItem>
-                            <LinkItem linkTo={'cookie'}>Cookie Policy</LinkItem>
-                            <LinkItem linkTo={'privacy'}>
-                                Privacy Policy
-                            </LinkItem>
-                            <LinkItem linkTo={'contact'}>Contact Us</LinkItem>
+                            <li>
+                                <Link to='terms'>Terms & Conditions</Link>
+                            </li>
+                            <li>
+                                <Link to='cookie'>Cookie Policy</Link>
+                            </li>
+                            <li>
+                                <Link to='privacy'>Privacy Policy</Link>
+                            </li>
+                            <li>
+                                <Link to='contact'>Contact Us</Link>
+                            </li>
                         </ul>
-                        <Logo logo={styles.logo} />
                     </div>
                     <div className={styles.copyright}>
                         Copyright by Karol Michalak 2019

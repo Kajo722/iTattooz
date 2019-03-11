@@ -30,7 +30,8 @@ class HowItWorks extends Component {
         }
     };
 
-    render() {
+    render() 
+    {
         return (
             <>
                 <Section
