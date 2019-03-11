@@ -12,7 +12,7 @@ import img5 from '../../../assets/Images/Artists/artist6.jpg';
 class Artists extends Component {
     state = {
         index: 0,
-        hovering: false,
+        hovering: false
     };
 
     componentDidMount() {
@@ -77,6 +77,29 @@ class Artists extends Component {
             backgroundStyle = { background: 'rgb(255, 80, 80)' };
             imgSrc = img5;
         }
+
+        const artistData = [
+            { id: 0, name: 'Clare Melton' },
+            { id: 1, name: 'Guto Rodriguez' },
+            { id: 2, name: 'Aoife Arellano' },
+            { id: 3, name: 'Toni Bernal' },
+            { id: 4, name: 'Sanaa Duke' }
+        ];
+
+        const artists = artistData.map(artist => {
+            return (
+                <ArtistText
+                    hoverOn={() => this.hoverOn(artist.id)}
+                    hoverOff={this.hoverOff}
+                    number={artist.id}
+                    index={this.state.index}
+                    hovering={this.state.hovering}
+                    underline={styles.underline}>
+                    {artist.name}
+                </ArtistText>
+            );
+        });
+
         return (
             <>
                 <Section
@@ -87,49 +110,7 @@ class Artists extends Component {
                 />
                 <div style={backgroundStyle} className={styles.containerMain}>
                     <div className={styles.containerArtists}>
-                        <div className={styles.artistsList}>
-                            <ArtistText
-                                hoverOn={() => this.hoverOn(0)}
-                                hoverOff={this.hoverOff}
-                                number={0}
-                                index={this.state.index}
-                                hovering={this.state.hovering}
-                                underline={styles.underline}>Clare Melton
-                                
-                            </ArtistText>
-                            <ArtistText
-                                hoverOn={() => this.hoverOn(1)}
-                                hoverOff={this.hoverOff}
-                                number={1}
-                                index={this.state.index}
-                                hovering={this.state.hovering} underline={styles.underline}>
-                                Guto Rodriguez
-                            </ArtistText>
-                            <ArtistText
-                                hoverOn={() => this.hoverOn(2)}
-                                hoverOff={this.hoverOff}
-                                number={2}
-                                index={this.state.index}
-                                hovering={this.state.hovering} underline={styles.underline}>
-                                Aoife Arellano
-                            </ArtistText>
-                            <ArtistText
-                                hoverOn={() => this.hoverOn(3)}
-                                hoverOff={this.hoverOff}
-                                number={3}
-                                index={this.state.index}
-                                hovering={this.state.hovering} underline={styles.underline}>
-                                Toni Bernal
-                            </ArtistText>
-                            <ArtistText
-                                hoverOn={() => this.hoverOn(4)}
-                                hoverOff={this.hoverOff}
-                                number={4}
-                                index={this.state.index}
-                                hovering={this.state.hovering} underline={styles.underline}>
-                                Sanaa Duke
-                            </ArtistText>
-                        </div>
+                        <div className={styles.artistsList}>{artists}</div>
                         <div className={styles.artistsImage}>
                             <CrossfadeImage
                                 src={imgSrc}

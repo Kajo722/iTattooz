@@ -11,153 +11,60 @@ import img5 from '../../assets/Images/Artists/artist6.jpg';
 
 class Artists extends Component {
     render() {
+        const data = [
+            {
+                id: 1,
+                image: img1,
+                name: 'Clare Melton',
+                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet luctus venenatis lectus magna fringilla urna. Donec et odio pellentesque diam volutpat. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Amet porttitor eget dolor morbi non arcu risus quis varius. Sed egestas egestas fringilla phasellus faucibus. Eget mi proin sed libero enim. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sit amet porttitor eget dolor morbi non arcu. Porttitor lacus luctus accumsan tortor posuere ac ut. Sapien et ligula ullamcorper malesuada proin libero nunc. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Diam vel quam elementum pulvinar etiam non quam. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Viverra nam libero justo laoreet sit amet. Suspendisse interdum consectetur libero id.`
+            },
+            {
+                id: 2,
+                image: img2,
+                name: 'Guto Rodriguez',
+                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta lorem. Sagittis id consectetur purus ut faucibus pulvinar elementum. Suspendisse interdum consectetur libero id. Tortor condimentum lacinia quis vel eros donec ac odio. Sit amet consectetur adipiscing elit ut aliquam purus sit. Amet cursus sit amet dictum sit amet justo. Enim praesent elementum facilisis leo vel fringilla est. Varius duis at consectetur lorem donec massa sapien. Sit amet massa vitae tortor condimentum lacinia quis vel. Et leo duis ut diam quam. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Ut placerat orci nulla pellentesque dignissim enim.`
+            },
+            {
+                id: 3,
+                image: img3,
+                name: 'Aoife Arellano',
+                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Suspendisse sed nisi lacus sed viverra tellus. Pellentesque id nibh tortor id aliquet lectus. Consectetur lorem donec massa sapien faucibus et molestie. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Auctor elit sed vulputate mi sit amet mauris commodo quis. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vestibulum sed arcu non odio euismod lacinia at quis risus. Rutrum quisque non tellus orci. Odio aenean sed adipiscing diam donec adipiscing tristique risus.`
+            },
+            {
+                id: 4,
+                image: img4,
+                name: 'Toni Bernal',
+                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui sapien eget mi. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Elit eget gravida cum sociis natoque. Amet cursus sit amet dictum sit amet justo. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Dictum fusce ut placerat orci nulla pellentesque dignissim. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Pharetra diam sit amet nisl suscipit. Leo duis ut diam quam nulla porttitor massa id neque.`
+            },
+            {
+                id: 5,
+                image: img5,
+                name: 'Sanaa Duke',
+                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis. Sit amet luctus venenatis lectus magna fringilla urna. Volutpat diam ut venenatis tellus. Eu scelerisque felis imperdiet proin fermentum. Mollis aliquam ut porttitor leo a. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Ut consequat semper viverra nam libero justo laoreet sit. Libero enim sed faucibus turpis in eu mi bibendum. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Sed id semper risus in hendrerit gravida rutrum quisque non. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Sed lectus vestibulum mattis ullamcorper. Eget nunc lobortis mattis aliquam faucibus purus in massa. Risus sed vulputate odio ut enim blandit volutpat. Magna etiam tempor orci eu lobortis elementum nibh. Volutpat commodo sed egestas egestas fringilla phasellus.`
+            }
+        ];
+
+        const artists = data.map(artist => {
+            return (
+                <div
+                    className={[
+                        styles.artistContainer,
+                        styles.artistContainer + artist.id
+                    ].join(' ')}>
+                    <div className={styles.header}>{artist.name}</div>
+                    <Image className={styles.image} src={artist.image} />
+                    <div>{artist.description}</div>
+                </div>
+            );
+        });
+
         return (
             <>
                 <PageHeaderContainer>
                     <PageHeader>Our Artists</PageHeader>
                 </PageHeaderContainer>
                 <div className={styles.containerMain}>
-                    <div className={styles.containerGrid}>
-                        <div className={[styles.artistContainer, styles.artistContainer1].join(' ')}>
-                            <div className={styles.header}>Clare Melton</div>
-                            <Image
-                                className={styles.image}
-                                src={img1}
-                            />
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Elementum curabitur vitae nunc sed velit.
-                                Maecenas sed enim ut sem viverra aliquet. Nisl
-                                tincidunt eget nullam non nisi. Nisi porta lorem
-                                mollis aliquam ut. Amet facilisis magna etiam
-                                tempor orci eu lobortis elementum nibh. Eu
-                                ultrices vitae auctor eu augue. Venenatis urna
-                                cursus eget nunc scelerisque. Eget magna
-                                fermentum iaculis eu non diam phasellus
-                                vestibulum. Arcu cursus euismod quis viverra
-                                nibh cras pulvinar mattis nunc. Libero id
-                                faucibus nisl tincidunt eget nullam non. Ac ut
-                                consequat semper viverra nam libero. Egestas sed
-                                sed risus pretium quam. Mauris in aliquam sem
-                                fringilla ut morbi. Est lorem ipsum dolor sit
-                                amet consectetur.
-                            </div>
-                        </div>
-                        <div className={[styles.artistContainer, styles.artistContainer2].join(' ')}>
-                            <div className={styles.header}>Guto Rodriguez</div>
-                            <Image
-                                className={styles.image}
-                                src={img2}
-                            />
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Cursus risus at ultrices mi tempus imperdiet
-                                nulla. Porttitor leo a diam sollicitudin tempor.
-                                Risus feugiat in ante metus dictum at tempor
-                                commodo. Eget nunc lobortis mattis aliquam
-                                faucibus purus. Libero enim sed faucibus turpis
-                                in eu mi bibendum neque. Morbi quis commodo odio
-                                aenean sed. Diam sit amet nisl suscipit
-                                adipiscing bibendum est ultricies. Pellentesque
-                                eu tincidunt tortor aliquam nulla facilisi cras
-                                fermentum odio. Pellentesque nec nam aliquam sem
-                                et. Nulla facilisi cras fermentum odio eu
-                                feugiat pretium nibh. Adipiscing tristique risus
-                                nec feugiat in fermentum. Tempus egestas sed sed
-                                risus pretium quam vulputate dignissim
-                                suspendisse. Egestas congue quisque egestas diam
-                                in. Ultrices gravida dictum fusce ut placerat.
-                                Tellus at urna condimentum mattis pellentesque
-                                id nibh. Aliquet lectus proin nibh nisl
-                                condimentum id venenatis a.
-                            </div>
-                        </div>
-                        <div className={[styles.artistContainer, styles.artistContainer3].join(' ')}>
-                            <div className={styles.header}>Aoife Arellano</div>
-                            <Image
-                                className={styles.image}
-                                src={img3}
-                            />
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Luctus accumsan tortor posuere ac ut consequat
-                                semper viverra nam. Nulla pharetra diam sit amet
-                                nisl suscipit adipiscing bibendum. Augue lacus
-                                viverra vitae congue eu consequat ac. Aliquam
-                                sem et tortor consequat id porta. Congue nisi
-                                vitae suscipit tellus mauris a. Malesuada
-                                pellentesque elit eget gravida. Commodo sed
-                                egestas egestas fringilla phasellus faucibus
-                                scelerisque eleifend donec. At risus viverra
-                                adipiscing at in tellus integer. Sit amet
-                                aliquam id diam maecenas ultricies mi. Urna nec
-                                tincidunt praesent semper feugiat nibh sed
-                                pulvinar. Et netus et malesuada fames ac turpis.
-                                Faucibus purus in massa tempor nec. Sed lectus
-                                vestibulum mattis ullamcorper velit sed
-                                ullamcorper morbi tincidunt.
-                            </div>
-                        </div>
-                        <div className={[styles.artistContainer, styles.artistContainer4].join(' ')}>
-                            <div className={styles.header}>Toni Bernal</div>
-                            <Image
-                                className={styles.image}
-                                src={img4}
-                            />
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Adipiscing elit duis tristique sollicitudin nibh
-                                sit amet. Adipiscing bibendum est ultricies
-                                integer. Pulvinar etiam non quam lacus
-                                suspendisse faucibus interdum posuere lorem.
-                                Fermentum et sollicitudin ac orci phasellus
-                                egestas tellus. Mi sit amet mauris commodo quis
-                                imperdiet massa. Lectus proin nibh nisl
-                                condimentum id venenatis a condimentum vitae.
-                                Vestibulum rhoncus est pellentesque elit
-                                ullamcorper dignissim cras tincidunt lobortis.
-                                Massa tincidunt nunc pulvinar sapien et ligula
-                                ullamcorper malesuada proin. Semper risus in
-                                hendrerit gravida. Praesent elementum facilisis
-                                leo vel fringilla est ullamcorper eget. Et
-                                ultrices neque ornare aenean. Vel fringilla est
-                                ullamcorper eget nulla
-                            </div>
-                        </div>
-                        <div className={[styles.artistContainer, styles.artistContainer5].join(' ')}>
-                            <div className={styles.header}>Sanaa Duke</div>
-                            <Image
-                                className={styles.image}
-                                src={img5}
-                            />
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Id
-                                venenatis a condimentum vitae sapien
-                                pellentesque habitant. Eget nullam non nisi est
-                                sit amet facilisis. Nunc id cursus metus aliquam
-                                eleifend mi in nulla. Commodo viverra maecenas
-                                accumsan lacus vel. Imperdiet nulla malesuada
-                                pellentesque elit eget. Integer vitae justo eget
-                                magna. Aenean et tortor at risus viverra. Est
-                                velit egestas dui id. Nibh mauris cursus mattis
-                                molestie. In iaculis nunc sed augue lacus.
-                                Vulputate dignissim suspendisse in est.
-                                Vestibulum morbi blandit cursus risus at
-                                ultrices mi tempus. Pharetra et ultrices neque
-                                ornare aenean euismod elementum nisi quis.
-                            </div>
-                        </div>
-                    </div>
+                    <div className={styles.containerGrid}>{artists}</div>
                 </div>
             </>
         );

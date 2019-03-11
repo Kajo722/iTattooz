@@ -1,15 +1,34 @@
 import React from 'react';
+import styles from './DesignElement.module.css';
 import Image from '../Image/Image';
 
 const DesignElement = props => {
     return (
         <div
-            className={props.containerStyle}
+            className={[styles.imgWrap, props.containerStyle].join(' ')}
             onMouseEnter={props.hoverOn}
-            onMouseLeave={props.hoverOff}>
+            onMouseLeave={props.hoverOff}
+            index={props.index}
+            number={props.number}>
             <Image src={props.imageSrc} className={props.imageStyle} />
-            <div className={props.backgroundStyle} />
-            <div className={props.textStyle}>{props.children}</div>
+            <div
+                className={
+                    props.index === props.number
+                        ? [
+                              styles.backgroundVisible,
+                              styles.backgroundOnHover
+                          ].join(' ')
+                        : styles.backgroundNotVisible
+                }
+            />
+            <div
+                className={
+                    props.index === props.number
+                        ? [styles.textVisible, styles.textOnHover].join(' ')
+                        : styles.textHidden
+                }>
+                {props.children}
+            </div>
         </div>
     );
 };

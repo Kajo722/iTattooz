@@ -1,0 +1,62 @@
+.backgroundNotVisible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.backgroundVisible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background: purple;
+    width: 100%;
+    height: 100%;
+}
+
+.backgroundOnHover {
+    opacity: 0.2;
+    visibility: visible;
+}
+
+.textHidden {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    font-size: 3rem;
+}
+.textVisible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    color: white;
+    opacity: 0;
+    font-size: 3rem;
+}
+
+.textOnHover {
+    opacity: 1;
+    visibility: visible;
+}
+.imgWrap {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}

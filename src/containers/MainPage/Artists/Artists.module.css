@@ -39,24 +39,20 @@
     height: 100%;
 }
 
-
 @media screen and (max-width: 1750px) {
     .artistsList {
-
         font-size: 4rem;
     }
 }
 
 @media screen and (max-width: 1250px) {
     .artistsList {
-
         font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .artistsList {
-
         font-size: 2rem;
     }
     .containerArtists {

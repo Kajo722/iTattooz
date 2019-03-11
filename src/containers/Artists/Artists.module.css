@@ -3,7 +3,6 @@
     margin: auto;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    
 }
 .containerGrid {
     display: grid;
@@ -58,7 +57,6 @@
     left: -3rem;
 }
 
-
 .artistContainer3::before {
     content: '';
     display: block;
@@ -80,13 +78,13 @@
     display: block;
     position: absolute;
     width: 11.875rem;
-    height: 11.875rem;;
+    height: 11.875rem;
     background: linear-gradient(0deg, #d8d2d1 0%, #eaa5ff 100%);
     opacity: 0.5;
     bottom: 5%;
     left: 30%;
     -webkit-clip-path: polygon(0 0, 44% 100%, 95% 1%);
-clip-path: polygon(0 0, 44% 100%, 95% 1%);
+    clip-path: polygon(0 0, 44% 100%, 95% 1%);
 }
 
 .artistContainer4::after {

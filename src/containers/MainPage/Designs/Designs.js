@@ -52,191 +52,104 @@ class Designs extends Component {
     };
 
     render() {
+
+        const designData = [
+            {id: 1, text: 'Hand Tattoos', img: img1},
+            {id: 2, text: 'Arm Tattoos', img: img2},
+            {id: 3, text: 'Thigh Tattoos', img: img3},
+            {id: 4, text: 'Neck Tattoos', img: this.state.isMobile ? img6 : img4},
+            {id: 5, text: 'Calf Tattoos', img: img5},
+            {id: 6, text: 'Chest Tattoos', img: this.state.isMobile ? img4 : img6},
+            {id: 7, text: 'Back Tattoos', img: img7}
+        ];
+
+        const designs = designData.map((design) => {
+            return <DesignElement
+            containerStyle={styles.img + design.id}
+            hoverOn={() => this.hoverOn(design.id)}
+            hoverOff={this.hoverOff}
+            imageSrc={design.img}
+            imageStyle={styles.image}
+            number={design.id}
+            index={this.state.index}>
+            {design.text}
+        </DesignElement>
+        })
+
+
         return (
             <>
                 <Section header={'Discover endless posibilities'} description={'In iTattooz we let our customers choose from all variaties of designs - everything is possible. Imagination is the only limit. You can express yourself anywhere on your body.'}/>
                 <div className={styles.containerMain}>
                     <div className={styles.designsContainer}>
                         <DesignElement
-                            containerStyle={[styles.img1, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img1]}
                             hoverOn={() => this.hoverOn(1)}
                             hoverOff={this.hoverOff}
                             imageSrc={img1}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 1
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 1
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={1}
+                            index={this.state.index}>
                             Hand Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img2, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img2]}
                             hoverOn={() => this.hoverOn(2)}
                             hoverOff={this.hoverOff}
                             imageSrc={img2}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 2
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 2
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={2}
+                            index={this.state.index}>
                             Arm Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img3, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img3]}
                             hoverOn={() => this.hoverOn(3)}
                             hoverOff={this.hoverOff}
                             imageSrc={img3}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 3
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 3
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={3}
+                            index={this.state.index}>
                             Thigh Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img4, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img4]}
                             hoverOn={() => this.hoverOn(4)}
                             hoverOff={this.hoverOff}
                             imageSrc={this.state.isMobile ? img6 : img4}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 4
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 4
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={4}
+                            index={this.state.index}>
                             Neck Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img5, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img5]}
                             hoverOn={() => this.hoverOn(5)}
                             hoverOff={this.hoverOff}
                             imageSrc={img5}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 5
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 5
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={5}
+                            index={this.state.index}>
                             Calf Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img6, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img6]}
                             hoverOn={() => this.hoverOn(6)}
                             hoverOff={this.hoverOff}
                             imageSrc={this.state.isMobile ? img4 : img6}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 6
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 6
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={6}
+                            index={this.state.index}>
                             Chest Tattoos
                         </DesignElement>
                         <DesignElement
-                            containerStyle={[styles.img7, styles.imgWrap].join(
-                                ' '
-                            )}
+                            containerStyle={[styles.img7]}
                             hoverOn={() => this.hoverOn(7)}
                             hoverOff={this.hoverOff}
                             imageSrc={img7}
                             imageStyle={styles.image}
-                            backgroundStyle={
-                                this.state.index === 7
-                                    ? [
-                                          styles.backgroundVisible,
-                                          styles.backgroundOnHover
-                                      ].join(' ')
-                                    : styles.backgroundNotVisible
-                            }
-                            textStyle={
-                                this.state.index === 7
-                                    ? [
-                                          styles.textVisible,
-                                          styles.textOnHover
-                                      ].join(' ')
-                                    : styles.textHidden
-                            }>
+                            number={7}
+                            index={this.state.index}>
                             Back Tattoos
                         </DesignElement>
                     </div>
