@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styles from './AboutSlideshow.module.css';
-import img1 from '../../assets/Images/AboutSlideshow1.jpg';
-import img2 from '../../assets/Images/AboutSlideshow2.jpg';
-import img3 from '../../assets/Images/AboutSlideshow3.jpg';
+import img1 from '../../assets/Images/AboutSlideshow/AboutSlideshow1.jpg';
+import img2 from '../../assets/Images/AboutSlideshow/AboutSlideshow2.jpg';
+import img3 from '../../assets/Images/AboutSlideshow/AboutSlideshow3.jpg';
 
 class AboutSlideshow extends Component {
     state = {

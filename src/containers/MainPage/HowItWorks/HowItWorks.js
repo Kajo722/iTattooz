@@ -3,9 +3,9 @@ import styles from './HowItWorks.module.css';
 import Section from '../../../components/Typography/Section/Section';
 import Features from '../../../components/Features/Features/Features';
 import Feature from '../../../components/Features/Feature/Feature';
-import img1 from '../../../assets/Images/HowItWorks1.jpg';
-import img2 from '../../../assets/Images/HowItWorks2.jpg';
-import img3 from '../../../assets/Images/HowItWorks3.jpg';
+import img1 from '../../../assets/Images/HowItWorks/HowItWorks1.jpg';
+import img2 from '../../../assets/Images/HowItWorks/HowItWorks2.jpg';
+import img3 from '../../../assets/Images/HowItWorks/HowItWorks3.jpg';
 
 class HowItWorks extends Component {
     state = {

@@ -1,7 +1,6 @@
 .feature {
     font-weight: 800;
     padding-top: 3rem;
-
 }
 .feature::before {
     content: '';
@@ -12,4 +11,3 @@
     transform: rotate(-45deg);
     margin-right: 1rem;
 }
-

@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import styles from './Navbar.module.css';
 import LinkList from './LinkList/LinkList';
 import LinkItem from './LinkItem/LinkItem';
 
 class Navbar extends Component {
     state = {
-        active: false
+        active: false,
+        links: [
+            { id: 1, text: 'Home', link: '/' },
+            { id: 2, text: 'Artists', link: 'artists' },
+            { id: 3, text: 'Career', link: 'career' },
+            { id: 4, text: 'Contact Us', link: 'contact' }
+        ]
     };
 
     onClickNavbar = () => {
@@ -17,6 +22,17 @@ class Navbar extends Component {
     };
 
     render() {
+        const links = this.state.links.map(link => {
+            return (
+                <LinkItem
+                    style={`${styles.link + link.id} ${
+                        this.state.active ? styles.opacity : ''
+                    }`}
+                    linkTo={link.link}>
+                    {link.text}
+                </LinkItem>
+            );
+        });
         return (
             <div className={styles.navbar}>
                 <div
@@ -32,29 +48,7 @@ class Navbar extends Component {
                     style={`${styles.navbarNav} ${
                         this.state.active ? styles.visibility : ''
                     }`}>
-                    <LinkItem
-                        style={`${styles.link1} ${
-                            this.state.active ? styles.opacity : ''
-                        }`} linkTo={'/'}>Home
-                    </LinkItem>
-                    <LinkItem
-                        style={`${styles.link2} ${
-                            this.state.active ? styles.opacity : ''
-                        }`} linkTo={'artists'}>
-                        Artists
-                    </LinkItem>
-                    <LinkItem
-                        style={`${styles.link3} ${
-                            this.state.active ? styles.opacity : ''
-                        }`} linkTo={'career'}>
-                        Career
-                    </LinkItem>
-                    <LinkItem
-                        style={`${styles.link4} ${
-                            this.state.active ? styles.opacity : ''
-                        }`} linkTo={'contact'}>
-                        Contact Us
-                    </LinkItem>
+                    {links}
                 </LinkList>
             </div>
         );

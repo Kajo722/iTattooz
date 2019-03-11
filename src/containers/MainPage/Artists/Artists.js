@@ -4,17 +4,15 @@ import styles from './Artists.module.css';
 import Section from '../../../components/Typography/Section/Section';
 import ArtistText from '../../../components/ArtistText/ArtistText';
 import img1 from '../../../assets/Images/Artists/artist1.jpg';
-import img2 from '../../../assets/Images/Artists/artist2.jpg';
-import img3 from '../../../assets/Images/Artists/artist3.jpg';
-import img4 from '../../../assets/Images/Artists/artist4.jpg';
-import img5 from '../../../assets/Images/Artists/artist5.jpg';
-import img6 from '../../../assets/Images/Artists/artist6.jpg';
+import img2 from '../../../assets/Images/Artists/artist3.jpg';
+import img3 from '../../../assets/Images/Artists/artist4.jpg';
+import img4 from '../../../assets/Images/Artists/artist5.jpg';
+import img5 from '../../../assets/Images/Artists/artist6.jpg';
 
 class Artists extends Component {
     state = {
         index: 0,
         hovering: false,
-        images: [img1, img2, img3, img4, img5, img6]
     };
 
     componentDidMount() {
@@ -65,19 +63,19 @@ class Artists extends Component {
         }
         if (this.state.index === 1) {
             backgroundStyle = { background: 'rgb(51, 255, 204)' };
-            imgSrc = img3;
+            imgSrc = img2;
         }
         if (this.state.index === 2) {
             backgroundStyle = { background: 'rgb(217, 217, 217)' };
-            imgSrc = img4;
+            imgSrc = img3;
         }
         if (this.state.index === 3) {
             backgroundStyle = { background: 'rgb(255, 204, 153)' };
-            imgSrc = img5;
+            imgSrc = img4;
         }
         if (this.state.index === 4) {
             backgroundStyle = { background: 'rgb(255, 80, 80)' };
-            imgSrc = img6;
+            imgSrc = img5;
         }
         return (
             <>

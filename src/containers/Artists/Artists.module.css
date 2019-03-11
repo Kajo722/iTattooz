@@ -1,0 +1,129 @@
+.containerMain {
+    max-width: 140rem;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+.containerGrid {
+    display: grid;
+    grid-row-gap: 5rem;
+    grid-template-columns: auto;
+}
+
+.artistContainer {
+    display: grid;
+    grid-row-gap: 2rem;
+    position: relative;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 600rem;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 140rem;
+    height: auto;
+    z-index: 1;
+}
+
+.artistContainer1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11.875rem;
+    height: 11.875rem;
+    background: linear-gradient(0deg, #d8d2d1 0%, #eaa5ff 100%);
+    opacity: 0.5;
+    bottom: 0;
+    right: 3rem;
+}
+
+.artistContainer2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-top-width: 0.75rem;
+    border-top-color: rgb(51, 255, 204);
+    border-top-style: solid;
+    border-left-width: 0.75rem;
+    border-left-color: rgb(51, 255, 204);
+    border-left-style: solid;
+    top: 0;
+    left: -3rem;
+}
+
+
+.artistContainer3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-top-width: 0.75rem;
+    border-top-color: rgb(217, 217, 217);
+    border-top-style: solid;
+    border-right-width: 0.75rem;
+    border-right-color: rgb(217, 217, 217);
+    border-right-style: solid;
+    top: 0;
+    right: -1rem;
+}
+
+.artistContainer4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11.875rem;
+    height: 11.875rem;;
+    background: linear-gradient(0deg, #d8d2d1 0%, #eaa5ff 100%);
+    opacity: 0.5;
+    bottom: 5%;
+    left: 30%;
+    -webkit-clip-path: polygon(0 0, 44% 100%, 95% 1%);
+clip-path: polygon(0 0, 44% 100%, 95% 1%);
+}
+
+.artistContainer4::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-bottom-width: 0.75rem;
+    border-bottom-color: rgb(255, 204, 153);
+    border-bottom-style: solid;
+    border-right-width: 0.75rem;
+    border-right-color: rgb(255, 204, 153);
+    border-right-style: solid;
+    bottom: -2rem;
+    right: -2rem;
+}
+.artistContainer5::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-bottom-width: 0.75rem;
+    border-bottom-color: rgb(255, 80, 80);
+    border-bottom-style: solid;
+    border-left-width: 0.75rem;
+    border-left-color: rgb(255, 80, 80);
+    border-left-style: solid;
+    bottom: -2rem;
+    left: -2rem;
+}
+
+@media screen and (max-width: 1500px) {
+    .containerMain {
+        max-width: 140rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}

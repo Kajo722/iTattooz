@@ -14,7 +14,7 @@
     left: 0;
     opacity: 0.4;
     border: 0.5rem solid;
-    border-image: linear-gradient(90deg,#eaa5ff 25%,#d8d2d1 100%);
+    border-image: linear-gradient(90deg, #eaa5ff 25%, #d8d2d1 100%);
     border-image-slice: 1;
     top: 4rem;
     height: 70%;

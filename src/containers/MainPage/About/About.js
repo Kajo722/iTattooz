@@ -8,8 +8,8 @@ import HeaderMain from '../../../components/Typography/HeaderMain/HeaderMain';
 import HeaderSecondary from '../../../components/Typography/HeaderSecondary/HeaderSecondary';
 import Section from '../../../components/Typography/Section/Section';
 import Paragraph from '../../../components/Typography/Paragraph/Paragraph';
-import img1 from '../../../assets/Images/AboutImage.jpg';
-import img2 from '../../../assets/Images/AboutImage3.jpg';
+import img1 from '../../../assets/Images/AboutImages/AboutImage.jpg';
+import img2 from '../../../assets/Images/AboutImages/AboutImage3.jpg';
 
 const imageMain = [
     {
