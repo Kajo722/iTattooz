@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import LinkItem from '../Navigation/Navbar/LinkItem/LinkItem';
 import styles from './Footer.module.css';
 
 class Footer extends Component {

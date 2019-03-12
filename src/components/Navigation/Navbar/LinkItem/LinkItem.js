@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LinkItem = props => {
     return (
-        <li className={props.style}>
+        <li onClick={props.click} className={props.style}>
             <Link to={props.linkTo}>{props.children}</Link>
         </li>
     );

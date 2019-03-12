@@ -27,13 +27,6 @@
     grid-row: 1;
 }
 
-@media screen and (max-width: 800px) {
-    .featureContainer {
-        grid-template-columns: 1fr;
-        grid-row-gap: 3rem;
-    }
-}
-
 @media screen and (max-width: 1350px) {
     .container {
         margin-left: 5rem;
@@ -43,9 +36,16 @@
         width: 100%;
     }
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+    .featureContainer {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
     .featureContent {
         grid-row-gap: 2rem;
     }
 }
+
+
+
+

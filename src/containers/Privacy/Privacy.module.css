@@ -1,15 +1,15 @@
 .content {
     margin-top: 5rem;
     letter-spacing: 0.1rem;
-    line-height: 3rem;
+    line-height: 4rem;
     font-weight: 500;
     font-size: 1.8rem;
 }
 
 .content p {
+    font-weight: 400;
     margin-bottom: 2.5rem;
 }
-
 .bold {
     font-weight: 800;
 }

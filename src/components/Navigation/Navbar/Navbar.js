@@ -25,6 +25,8 @@ class Navbar extends Component {
         const links = this.state.links.map(link => {
             return (
                 <LinkItem
+                    click={this.onClickNavbar}
+                    key={link.id}
                     style={`${link.style} ${
                         this.state.active ? styles.opacity : ''
                     }`}

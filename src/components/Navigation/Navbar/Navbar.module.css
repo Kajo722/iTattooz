@@ -177,6 +177,7 @@
     .hamburger {
         right: 0rem;
         top: 0rem;
+        z-index: 6;
     }
 
     .navbarNav {
@@ -189,7 +190,7 @@
         align-items: center;
         justify-content: space-evenly;
         width: 0rem;
-        z-index: 4;
+        z-index: 5;
     }
 
     .visibility {

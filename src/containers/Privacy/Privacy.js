@@ -8,7 +8,7 @@ const privacy = props => {
         <PageHeaderContainer>
             <PageHeader>Privacy</PageHeader>
             <div className={styles.content}>
-                <p className={styles.bold}>Faucibus purus in massa tempor?</p>
+                <div className={styles.bold}>Faucibus purus in massa tempor?</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -24,7 +24,7 @@ const privacy = props => {
                     in. In est ante in nibh mauris cursus mattis molestie a.
                     Condimentum mattis pellentesque id nibh.
                 </p>
-                <p className={styles.bold}>Justo eget magna fermentum</p>
+                <div className={styles.bold}>Justo eget magna fermentum</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -40,7 +40,7 @@ const privacy = props => {
                     in. In est ante in nibh mauris cursus mattis molestie a.
                     Condimentum mattis pellentesque id nibh.
                 </p>
-                <p className={styles.bold}>Laoreet non curabitur?</p>
+                <div className={styles.bold}>Laoreet non curabitur?</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

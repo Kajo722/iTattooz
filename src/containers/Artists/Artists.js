@@ -52,12 +52,13 @@ class Artists extends Component {
         const artists = data.map(artist => {
             return (
                 <div
+                    key={artist.id}
                     className={[styles.artistContainer, artist.style].join(
                         ' '
                     )}>
                     <div className={styles.header}>{artist.name}</div>
                     <Image className={styles.image} src={artist.image} />
-                    <div>{artist.description}</div>
+                    <div className={styles.description}>{artist.description}</div>
                 </div>
             );
         });

@@ -10,7 +10,7 @@ const DesignElement = props => {
             onMouseLeave={props.hoverOff}
             index={props.index}
             number={props.number}>
-            <Image src={props.imageSrc} className={props.imageStyle} />
+            <Image src={props.imageSrc} className={props.imageStyle} alt={props.alt}/>
             <div
                 className={
                     props.index === props.number

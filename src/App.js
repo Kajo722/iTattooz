@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Layout from '../src/hoc/Layout/Layout';
 import MainPage from './containers/MainPage/MainPage';
 import Artists from './containers/Artists/Artists';
@@ -16,12 +16,13 @@ class App extends Component {
                 <Layout>
                     <Switch>
                         <Route path='/' exact component={MainPage} />
-                        <Route path='/artists' exact component={Artists} />
-                        <Route path='/career' exact component={Career} />
-                        <Route path='/contact' exact component={ContactUs} />
-                        <Route path='/terms' exact component={Terms} />
-                        <Route path='/cookie' exact component={Cookie} />
-                        <Route path='/privacy' exact component={Privacy} />
+                        <Route path='/artists' component={Artists} />
+                        <Route path='/career' component={Career} />
+                        <Route path='/contact' component={ContactUs} />
+                        <Route path='/terms' component={Terms} />
+                        <Route path='/cookie' component={Cookie} />
+                        <Route path='/privacy' component={Privacy} />
+                        <Redirect to='/' />
                     </Switch>
                 </Layout>
             </>

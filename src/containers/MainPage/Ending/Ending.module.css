@@ -27,9 +27,32 @@
     display: inline-block;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 1000px) {
     .container {
+        font-size: 3rem;
+        max-width: 45rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        font-size: 2.5rem;
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        font-size: 2rem;
+        max-width: 30rem;
         margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container {
+        font-size: 1.75rem;
+        max-width: 20rem;
     }
 }
 

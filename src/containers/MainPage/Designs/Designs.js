@@ -11,27 +11,33 @@ import img6 from '../../../assets/Images/Designs/chestTattoo.jpg';
 import img7 from '../../../assets/Images/Designs/backTattoo2.jpg';
 
 class Designs extends Component {
+    _isMounted = false;
+
     state = {
         isMobile: false,
         index: 0,
         hovering: false
     };
     componentDidMount() {
+        this._isMounted = true;
         this.resize();
         window.addEventListener('resize', this.resize.bind(this));
     }
 
     componentWillUnmount() {
+        this._isMounted = false;
         window.removeEventListener('resize', this.resize());
     }
 
     resize = () => {
         let currentWidth = window.innerWidth <= 750;
         if (currentWidth !== this.state.isMobile) {
-            this.setState(prevState => ({
-                ...prevState,
-                isMobile: !this.state.isMobile
-            }));
+            if (this._isMounted) {
+                this.setState(prevState => ({
+                    ...prevState,
+                    isMobile: !this.state.isMobile
+                }));
+            }
         }
     };
 
@@ -75,13 +81,15 @@ class Designs extends Component {
         const designs = designData.map(design => {
             return (
                 <DesignElement
+                    key={design.id}
                     containerStyle={design.style}
                     hoverOn={() => this.hoverOn(design.id)}
                     hoverOff={this.hoverOff}
                     imageSrc={design.img}
                     imageStyle={styles.image}
                     number={design.id}
-                    index={this.state.index}>
+                    index={this.state.index}
+                    alt={`Design of ${design.text}`}>
                     {design.text}
                 </DesignElement>
             );

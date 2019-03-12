@@ -8,7 +8,7 @@ const cookie = () => {
         <PageHeaderContainer>
             <PageHeader>Cookie Policy</PageHeader>
             <div className={styles.content}>
-                <p className={styles.bold}>What are Cookies?</p>
+                <div className={styles.bold}>What are Cookies?</div>
                 <p>
                     Cookies are small text files that are placed on your
                     computer or mobile device by websites that you visit. They
@@ -16,7 +16,7 @@ const cookie = () => {
                     efficiently, as well as to provide information to the owners
                     of the site.
                 </p>
-                <p className={styles.bold}>Controlling Cookies</p>
+                <div className={styles.bold}>Controlling Cookies</div>
                 <p>
                     Most web browsers allow some control of most cookies through
                     the browser settings. To find out more about cookies,
@@ -27,11 +27,11 @@ const cookie = () => {
                     You may limit site operation or functions if you limit
                     cookies.
                 </p>
-                <p className={styles.bold}>
+                <div className={styles.bold}>
                     How do we use cookies on our website?
-                </p>
+                </div>
                 <p />
-                <p className={styles.bold}>Type of Cookies</p>
+                <div className={styles.bold}>Type of Cookies</div>
                 <p>
                     Persistent cookies – these cookies remain on a user’s device
                     for the period of time specified in the cookie. They are

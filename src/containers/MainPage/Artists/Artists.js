@@ -89,6 +89,7 @@ class Artists extends Component {
         const artists = artistData.map(artist => {
             return (
                 <ArtistText
+                key={artist.id}
                     hoverOn={() => this.hoverOn(artist.id)}
                     hoverOff={this.hoverOff}
                     number={artist.id}
@@ -116,6 +117,7 @@ class Artists extends Component {
                                 src={imgSrc}
                                 delay={200}
                                 duration={400}
+                                alt={'Tattoo artist'}
                             />
                         </div>
                     </div>

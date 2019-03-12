@@ -6,12 +6,13 @@ import Paragraph from '../../Typography/Paragraph/Paragraph';
 
 const feature = props => {
     return (
-        <Media query='(max-width: 800px)'>
+        <Media query='(max-width: 1100px)'>
             {matches =>
                 matches ? (
                     <>
                         <HeaderMain>{props.headerText}</HeaderMain>
                         <Image
+                            alt={props.alt}
                             src={props.imgSrc}
                             className={props.imageClassName}
                         />

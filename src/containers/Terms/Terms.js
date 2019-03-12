@@ -8,7 +8,7 @@ const terms = () => {
         <PageHeaderContainer>
             <PageHeader>Terms & Conditions</PageHeader>
             <div className={styles.content}>
-                <p className={styles.bold}>Faucibus purus in massa tempor?</p>
+                <div className={styles.bold}>Faucibus purus in massa tempor?</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -28,7 +28,7 @@ const terms = () => {
                     tellus in metus vulputate eu scelerisque felis. Vitae purus
                     faucibus ornare suspendisse sed nisi lacus sed.
                 </p>
-                <p className={styles.bold}>Justo eget magna fermentum</p>
+                <div className={styles.bold}>Justo eget magna fermentum</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -44,7 +44,7 @@ const terms = () => {
                     pretium. Dictum at tempor commodo ullamcorper. Quam nulla
                     porttitor massa id neque aliquam.
                 </p>
-                <p className={styles.bold}>Laoreet non curabitur?</p>
+                <div className={styles.bold}>Laoreet non curabitur?</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -63,7 +63,7 @@ const terms = () => {
                     congue nisi vitae. In ornare quam viverra orci sagittis eu
                     volutpat odio. Morbi blandit cursus risus at ultrices.
                 </p>
-                <p className={styles.bold}>Laoreet non curabitur?</p>
+                <div className={styles.bold}>Laoreet non curabitur?</div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

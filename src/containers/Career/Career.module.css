@@ -90,6 +90,10 @@
     top: -5rem;
 }
 
+.description {
+    line-height: 3rem;
+}
+
 @media screen and (max-width: 1100px) {
     .containerMain {
         padding-right: 5rem;
