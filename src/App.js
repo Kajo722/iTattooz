@@ -15,13 +15,14 @@ class App extends Component {
             <>
                 <Layout>
                     <Switch>
-                        <Route path='/' exact component={MainPage} />
+
                         <Route path='/artists' component={Artists} />
                         <Route path='/career' component={Career} />
                         <Route path='/contact' component={ContactUs} />
                         <Route path='/terms' component={Terms} />
                         <Route path='/cookie' component={Cookie} />
                         <Route path='/privacy' component={Privacy} />
+                        <Route path='/' exact component={MainPage} />
                         <Redirect to='/' />
                     </Switch>
                 </Layout>
