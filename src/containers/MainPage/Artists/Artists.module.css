@@ -38,16 +38,13 @@
 .image {
     max-width: 100%;
     max-height: 100%;
-    opacity: 0;
-    transition: all 2s;
-    display: none;
+    position: absolute;
 }
 
-.imageOpacity {
+.image2 {
     max-width: 100%;
     max-height: 100%;
-    opacity: 1;
-    visibility: visible;
+    position: relative;
 }
 
 @media screen and (max-width: 1750px) {
@@ -59,6 +56,9 @@
 @media screen and (max-width: 1250px) {
     .artistsList {
         font-size: 3rem;
+    }
+    .containerArtists {
+        grid-column-gap: 15rem;
     }
 }
 

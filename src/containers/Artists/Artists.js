@@ -4,10 +4,10 @@ import PageHeader from '../../components/PagesHeader/PageHeader/PageHeader';
 import Image from '../../components/Image/Image';
 import styles from './Artists.module.css';
 import img1 from '../../assets/Images/Artists/artist1.jpg';
-import img2 from '../../assets/Images/Artists/artist3.jpg';
-import img3 from '../../assets/Images/Artists/artist4.jpg';
-import img4 from '../../assets/Images/Artists/artist5.jpg';
-import img5 from '../../assets/Images/Artists/artist6.jpg';
+import img2 from '../../assets/Images/Artists/artist2.jpg';
+import img3 from '../../assets/Images/Artists/artist3.jpg';
+import img4 from '../../assets/Images/Artists/artist4.jpg';
+import img5 from '../../assets/Images/Artists/artist5.jpg';
 
 class Artists extends Component {
     render() {

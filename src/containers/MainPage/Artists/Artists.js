@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import CrossfadeImage from 'react-crossfade-image';
+import CrossFadeImage from "@layflags/react-crossfade-image";
 import styles from './Artists.module.css';
 import Section from '../../../components/Typography/Section/Section';
 import ArtistText from '../../../components/ArtistText/ArtistText';
 import img1 from '../../../assets/Images/Artists/artist1.jpg';
-import img2 from '../../../assets/Images/Artists/artist3.jpg';
-import img3 from '../../../assets/Images/Artists/artist4.jpg';
-import img4 from '../../../assets/Images/Artists/artist5.jpg';
-import img5 from '../../../assets/Images/Artists/artist6.jpg';
+import img2 from '../../../assets/Images/Artists/artist2.jpg';
+import img3 from '../../../assets/Images/Artists/artist3.jpg';
+import img4 from '../../../assets/Images/Artists/artist4.jpg';
+import img5 from '../../../assets/Images/Artists/artist5.jpg';
 
 class Artists extends Component {
     state = {
@@ -113,12 +113,7 @@ class Artists extends Component {
                     <div className={styles.containerArtists}>
                         <div className={styles.artistsList}>{artists}</div>
                         <div className={styles.artistsImage}>
-                            <CrossfadeImage
-                                src={imgSrc}
-                                delay={200}
-                                duration={400}
-                                alt={'Tattoo artist'}
-                            />
+                        <CrossFadeImage src={imgSrc} alt='artist'/>
                         </div>
                     </div>
                 </div>
