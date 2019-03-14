@@ -57,7 +57,7 @@ class Header extends Component {
         }
         return (
             <>
-                <div className={styles.header}>
+                <div className={styles.header} title="iTattooz brand">
                     <div className={styles.headerText}>
                         {headerMain}
                         {headerSecondary}

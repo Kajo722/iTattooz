@@ -12,7 +12,7 @@ const feature = props => {
                     <>
                         <HeaderMain>{props.headerText}</HeaderMain>
                         <Image
-                            alt={props.alt}
+                            alt={'feature section'}
                             src={props.imgSrc}
                             className={props.imageClassName}
                         />
@@ -33,6 +33,7 @@ const feature = props => {
                         <Image
                             src={props.imgSrc}
                             className={props.imageClassName}
+                            alt={'feature section'}
                         />
                     </>
                 )

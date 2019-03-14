@@ -52,7 +52,8 @@ class HowItWorks extends Component {
                             containerClassName={styles.featureContent}
                             imageClassName={styles.image}
                             imgSrc={img1}
-                            alt={'Person holding piece of paper saying Design'}>
+                            alt={'Hand of tattoo artist with blue gloves making a tattoo'}
+                            >
                             <Feature>
                                 Contact us and get tools to start creating
                             </Feature>
