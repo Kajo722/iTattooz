@@ -20,3 +20,15 @@
     width: 4.375rem;
     border: 0.5px solid rgb(40, 38, 44);
 }
+
+@media screen and (max-width: 700px) {
+    .leftSidebar {
+        left: 1rem;
+        font-size: 1.5rem
+    }
+    
+    .copyright {
+        font-size: 1rem;
+
+    }
+}
