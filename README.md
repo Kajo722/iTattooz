@@ -5,6 +5,7 @@ Main features:
 - Single page application
 - Initialized with create-react-app
 - React with React Router with no additional UI frameworks
+- Lazy loading of components
 - Styles via CSS modules, usage of CSS Grid and Flexbox
 - Fully optimalized for all window sizes, including tablets and mobile devices
 - Multiple effects, including parallax, corousel, animations
