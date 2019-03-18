@@ -9,7 +9,7 @@ Main features:
 - Fully optimalized for all window sizes, including tablets and mobile devices
 - Multiple effects, including parallax, corousel, animations
 - Responsive layout and images
-- Completely optimalized in terms of Performance, Progressive Web App, Accessibility, Best Practices and SEO(via Google Lighthouse)
+- Completely optimalized in terms of Performance, Progressive Web App, Accessibility, Best Practices and SEO (via Google Lighthouse)
 
 
 ### Visit website here: www.itattooz.pl
