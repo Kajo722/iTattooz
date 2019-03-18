@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Layout from '../src/hoc/Layout/Layout';
-import MainPage from './containers/MainPage/MainPage';
-import Artists from './containers/Artists/Artists';
-import Career from './containers/Career/Career';
-import ContactUs from './containers/ContactUs/ContactUs';
-import Terms from './containers/Terms/Terms';
-import Cookie from './containers/Cookie/Cookie';
-import Privacy from './containers/Privacy/Privacy';
+import Spinner from './components/UI/Spinner/Spinner';
+const Suspense = React.Suspense;
+const MainPage = React.lazy(() => import('./containers/MainPage/MainPage'));
+const Artists = React.lazy(() => import('./containers/Artists/Artists'));
+const Career = React.lazy(() => import('./containers/Career/Career'));
+const ContactUs = React.lazy(() => import('./containers/ContactUs/ContactUs'));
+const Terms = React.lazy(() => import('./containers/Terms/Terms'));
+const Cookie = React.lazy(() => import('./containers/Cookie/Cookie'));
+const Privacy = React.lazy(() => import('./containers/Privacy/Privacy'));
 
 const ScrollToTop = () => {
     window.scrollTo(0, 0);
@@ -19,16 +21,21 @@ class App extends Component {
             <>
                 <Layout>
                     <Route component={ScrollToTop} />
-                    <Switch>
-                        <Route path='/artists' component={Artists} />
-                        <Route path='/career' component={Career} />
-                        <Route path='/contact' component={ContactUs} />
-                        <Route path='/terms' component={Terms} />
-                        <Route path='/cookie' component={Cookie} />
-                        <Route path='/privacy' component={Privacy} />
-                        <Route path='/' exact component={MainPage} />
-                        <Redirect to='/' />
-                    </Switch>
+                    <Suspense fallback={<Spinner />}>
+                        <Switch>
+                            <Route path='/artists' render={() => <Artists />} />
+                            <Route path='/career' render={() => <Career />} />
+                            <Route
+                                path='/contact'
+                                render={() => <ContactUs />}
+                            />
+                            <Route path='/terms' render={() => <Terms />} />
+                            <Route path='/cookie' render={() => <Cookie />} />
+                            <Route path='/privacy' render={() => <Privacy />} />
+                            <Route path='/' exact render={() => <MainPage />} />
+                            <Redirect to='/' />
+                        </Switch>
+                    </Suspense>
                 </Layout>
             </>
         );
