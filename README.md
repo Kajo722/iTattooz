@@ -1,6 +1,6 @@
 # This is a portfolio project of a website iTattoz build in React.
 
-Main features:
+Main features of project:
 
 - Single page application
 - Initialized with create-react-app
