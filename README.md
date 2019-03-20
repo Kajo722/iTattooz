@@ -1,4 +1,4 @@
-# This is a portfolio project of a website iTattoz build in React.
+# This is a portfolio project of a website iTattoz build in ReactJs.
 
 Main features of project:
 
