@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    height: 100%;
     background: url(../../../assets/Images/header.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
