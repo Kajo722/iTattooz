@@ -13,4 +13,4 @@ Main features of project:
 - Completely optimalized in terms of Performance, Progressive Web App, Accessibility, Best Practices and SEO (via Google Lighthouse)
 
 
-### Visit website here: www.itattooz.pl
+### Visit website here: https://itattooz-3aa5a.web.app/
